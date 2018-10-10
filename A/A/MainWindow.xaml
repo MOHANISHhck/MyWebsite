@@ -21,18 +21,16 @@
                 </MenuItem>
                 <Separator />
                 <MenuItem Header="Spare Parts">
-                    <MenuItem Header="Listing" Click="Listing_Click"/>
                     <MenuItem Header="Add New Part" />
                     <MenuItem Header="Remove Part" />
                      <MenuItem Header="Update Part Properties" />
-                    <MenuItem Header="View Part" />
+                    <MenuItem Header="View Part" Click="Listing_Click"/>
                 </MenuItem>
                 <Separator />
                 <MenuItem Header="_Exit" Click="Exit_Click"/>
             </MenuItem>   
             <MenuItem Header="_Warehouse">
                 <MenuItem Header="_Manage Warehouse">
-                    <MenuItem Header="Warehouse Listing" />
                     <MenuItem Header="Add New Warehouse" />
                     <MenuItem Header="Remove Warehouse" />
                     <MenuItem Header="Update Warehouse" />
@@ -42,7 +40,6 @@
             </MenuItem>
             <MenuItem Header="_Tasks">
                 <MenuItem Header="_Manage tasks">
-                    <MenuItem Header="Tasks Listing" />
                     <MenuItem Header="Add New Task" />
                     <MenuItem Header="Remove Task" />
                     <MenuItem Header="Update Task" />
@@ -58,14 +55,19 @@
             </MenuItem>
             <MenuItem Header="_Settings">
                 <MenuItem Header="_Manage users">
-                    <MenuItem Header="List Users" />
                     <MenuItem Header="Add User" />
+                    <MenuItem Header="Update User" />
+                    <MenuItem Header="Remove User" />
+                    <MenuItem Header="View Users" />
                 </MenuItem>
                 <Separator />
                 <MenuItem Header="_Manage Groups">
+                    <MenuItem Header="Add Group" />
+                    <MenuItem Header="Update Group" />
+                    <MenuItem Header="Remove Group" />
+                    <MenuItem Header="View Group" />
                 </MenuItem>
-                <MenuItem Header="_Show groups" IsCheckable="True" IsChecked="True" />
-            </MenuItem>
+               </MenuItem>
             <MenuItem Header="_Help">
                 <MenuItem Header="_About" Click="About_Click">
                 </MenuItem>
