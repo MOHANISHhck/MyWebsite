@@ -16,27 +16,17 @@ using System.Windows.Shapes;
 namespace A
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for About.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class About : Window
     {
-        public MainWindow()
+        public About()
         {
             InitializeComponent();
         }
-        private void Exit_Click(object sender, RoutedEventArgs e)
+        private void OK_Click(object sender, RoutedEventArgs e)
         {
-            Close();
-        }
-        private void About_Click(object sender, RoutedEventArgs e)
-        {
-            About w1 = new About();
-            w1.Show();
-        }
-        private void Listing_Click(object sender, RoutedEventArgs e)
-        {
-            Listing w1 = new Listing();
-            w1.Show();
+            this.Close();
         }
     }
 }
