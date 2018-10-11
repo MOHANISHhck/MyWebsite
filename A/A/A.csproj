@@ -55,11 +55,38 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Inventory.xaml.cs">
+      <DependentUpon>Inventory.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="StockReport.xaml.cs">
+      <DependentUpon>StockReport.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewPart.xaml.cs">
+      <DependentUpon>ViewPart.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewStock.xaml.cs">
+      <DependentUpon>ViewStock.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewTask.xaml.cs">
+      <DependentUpon>ViewTask.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewUser.xaml.cs">
+      <DependentUpon>ViewUser.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewWarehouse.xaml.cs">
+      <DependentUpon>ViewWarehouse.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewGroup.xaml.cs">
+      <DependentUpon>ViewGroup.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WarehouseReport.xaml.cs">
+      <DependentUpon>WarehouseReport.xaml</DependentUpon>
+    </Compile>
     <Page Include="About.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Listing.xaml">
+    <Page Include="Inventory.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -74,13 +101,42 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Listing.xaml.cs">
-      <DependentUpon>Listing.xaml</DependentUpon>
-    </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="StockReport.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ViewPart.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ViewStock.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ViewTask.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ViewUser.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ViewWarehouse.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ViewGroup.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WarehouseReport.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">

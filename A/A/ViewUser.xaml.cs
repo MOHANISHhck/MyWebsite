@@ -11,22 +11,17 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-//Additional using statements
-using System.Data;
-using System.Collections.ObjectModel;
-using System.Diagnostics;
 
 namespace A
 {
     /// <summary>
-    /// Interaction logic for Listing.xaml
+    /// Interaction logic for View_User.xaml
     /// </summary>
-    public partial class Listing : Window
+    public partial class ViewUser : Window
     {
-        public Listing()
+        public ViewUser()
         {
             InitializeComponent();
         }
     }
-    
 }

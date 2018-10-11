@@ -33,9 +33,49 @@ namespace A
             About w1 = new About();
             w1.Show();
         }
-        private void Listing_Click(object sender, RoutedEventArgs e)
+        private void ViewPart_Click(object sender, RoutedEventArgs e)
         {
-            Listing w1 = new Listing();
+            ViewPart w1 = new ViewPart();
+            w1.Show();
+        }
+        private void ViewStock_Click(object sender, RoutedEventArgs e)
+        {
+            ViewStock w1 = new ViewStock();
+            w1.Show();
+        }
+        private void ViewWarehouse_Click(object sender, RoutedEventArgs e)
+        {
+            ViewWarehouse w1 = new ViewWarehouse();
+            w1.Show();
+        }
+        private void ViewTask_Click(object sender, RoutedEventArgs e)
+        {
+            ViewTask w1 = new ViewTask();
+            w1.Show();
+        }
+        private void ViewUser_Click(object sender, RoutedEventArgs e)
+        {
+            ViewUser w1 = new ViewUser();
+            w1.Show();
+        }
+        private void ViewGroup_Click(object sender, RoutedEventArgs e)
+        {
+            ViewGroup w1 = new ViewGroup();
+            w1.Show();
+        }
+        private void StockReport_Click(object sender, RoutedEventArgs e)
+        {
+            StockReport w1 = new StockReport();
+            w1.Show();
+        }
+        private void WarehouseReport_Click(object sender, RoutedEventArgs e)
+        {
+            WarehouseReport w1 = new WarehouseReport();
+            w1.Show();
+        }
+        private void Inventory_Click(object sender, RoutedEventArgs e)
+        {
+            Inventory w1 = new Inventory();
             w1.Show();
         }
     }

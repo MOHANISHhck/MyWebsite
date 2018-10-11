@@ -10,21 +10,21 @@
     <DockPanel>
         <Menu DockPanel.Dock="Top">
             <MenuItem Header="_Stock">
-                <MenuItem Header="_Inventory" />
+                <MenuItem Header="_Inventory" Click="Inventory_Click"/>
                 <Separator />
                 <MenuItem Header="Stock">
                     <MenuItem Header="Add Stock" />
                     <MenuItem Header="Remove Stock" />
                     <MenuItem Header="Update Stock" />
                     <MenuItem Header="Move Stock" />
-                    <MenuItem Header="View Stock" />
+                    <MenuItem Header="View Stock" Click="ViewStock_Click"/>
                 </MenuItem>
                 <Separator />
                 <MenuItem Header="Spare Parts">
                     <MenuItem Header="Add New Part" />
                     <MenuItem Header="Remove Part" />
                      <MenuItem Header="Update Part Properties" />
-                    <MenuItem Header="View Part" Click="Listing_Click"/>
+                    <MenuItem Header="View Part" Click="ViewPart_Click"/>
                 </MenuItem>
                 <Separator />
                 <MenuItem Header="_Exit" Click="Exit_Click"/>
@@ -34,7 +34,7 @@
                     <MenuItem Header="Add New Warehouse" />
                     <MenuItem Header="Remove Warehouse" />
                     <MenuItem Header="Update Warehouse" />
-                    <MenuItem Header="View Warehouse" />
+                    <MenuItem Header="View Warehouse" Click="ViewWarehouse_Click"/>
                     </MenuItem>
                 <MenuItem Header="_Show groups" IsCheckable="True" IsChecked="True" />
             </MenuItem>
@@ -43,14 +43,14 @@
                     <MenuItem Header="Add New Task" />
                     <MenuItem Header="Remove Task" />
                     <MenuItem Header="Update Task" />
-                    <MenuItem Header="View Task" />
+                    <MenuItem Header="View Task" Click="ViewTask_Click"/>
                 </MenuItem>
                 <MenuItem Header="_Show groups" IsCheckable="True" IsChecked="True" />
             </MenuItem>
             <MenuItem Header="_Reports">
-                <MenuItem Header="_Stock Report">
+                <MenuItem Header="_Stock Report" Click="StockReport_Click" >
                 </MenuItem>
-                <MenuItem Header="_Warehouse Report">
+                <MenuItem Header="_Warehouse Report" Click="WarehouseReport_Click" >
                 </MenuItem>
             </MenuItem>
             <MenuItem Header="_Settings">
@@ -58,14 +58,14 @@
                     <MenuItem Header="Add User" />
                     <MenuItem Header="Update User" />
                     <MenuItem Header="Remove User" />
-                    <MenuItem Header="View Users" />
+                    <MenuItem Header="View Users" Click="ViewUser_Click"/>
                 </MenuItem>
                 <Separator />
                 <MenuItem Header="_Manage Groups">
                     <MenuItem Header="Add Group" />
                     <MenuItem Header="Update Group" />
                     <MenuItem Header="Remove Group" />
-                    <MenuItem Header="View Group" />
+                    <MenuItem Header="View Group" Click="ViewGroup_Click"/>
                 </MenuItem>
                </MenuItem>
             <MenuItem Header="_Help">
