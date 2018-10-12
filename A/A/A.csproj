@@ -79,8 +79,8 @@
     <Compile Include="ViewUser.xaml.cs">
       <DependentUpon>ViewUser.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ViewWarehouse.xaml.cs">
-      <DependentUpon>ViewWarehouse.xaml</DependentUpon>
+    <Compile Include="ViewWarehouses.xaml.cs">
+      <DependentUpon>ViewWarehouses.xaml</DependentUpon>
     </Compile>
     <Compile Include="ViewGroup.xaml.cs">
       <DependentUpon>ViewGroup.xaml</DependentUpon>
@@ -105,6 +105,9 @@
     </Compile>
     <Compile Include="WarehouseUpdate.xaml.cs">
       <DependentUpon>WarehouseUpdate.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="StockView.xaml.cs">
+      <DependentUpon>StockView.xaml</DependentUpon>
     </Compile>
     <Compile Include="WarehouseView.xaml.cs">
       <DependentUpon>WarehouseView.xaml</DependentUpon>
@@ -160,7 +163,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ViewWarehouse.xaml">
+    <Page Include="ViewWarehouses.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -195,6 +198,10 @@
     <Page Include="WarehouseUpdate.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="StockView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="WarehouseView.xaml">
       <SubType>Designer</SubType>

@@ -45,7 +45,7 @@ namespace A
         }
         private void ViewWarehouse_Click(object sender, RoutedEventArgs e)
         {
-            ViewWarehouse w1 = new ViewWarehouse();
+            ViewWarehouses w1 = new ViewWarehouses();
             w1.Show();
         }
         private void ViewTask_Click(object sender, RoutedEventArgs e)
