@@ -15,17 +15,13 @@ using System.Windows.Shapes;
 namespace A
 {
     /// <summary>
-    /// Interaction logic for Inventory.xaml
+    /// Interaction logic for Login.xaml
     /// </summary>
-    public partial class Inventory : Window
+    public partial class Login : Window
     {
-        public Inventory()
+        public Login()
         {
             InitializeComponent();
-        }
-        private void Exit_Click(object sender, RoutedEventArgs e)
-        {
-            this.Close();
         }
     }
 }

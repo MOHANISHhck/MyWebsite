@@ -11,7 +11,7 @@
     </Window.Resources>
 
     <Grid>
-        <DataGrid Name="DG1" ItemsSource="{Binding}" AutoGenerateColumns="False" >
+        <DataGrid Name="DG1" ItemsSource="{Binding}" AutoGenerateColumns="False" Margin="0,0,0,60"  >
             <DataGrid.Columns>
                 <DataGridTextColumn Header="ID"  Binding="{Binding PartID}"/>
                 <DataGridTextColumn Header="Part Name" Binding="{Binding PartName}" />
@@ -22,5 +22,11 @@
                 <DataGridCheckBoxColumn Header="Location" Binding="{Binding StockLocation}" />
             </DataGrid.Columns>
         </DataGrid>
+        <Button Content="Exit" HorizontalAlignment="Left" Margin="688,376,0,0" VerticalAlignment="Top" Width="75" Click="Exit_Click"/>
+        <Button Content="View Stock" HorizontalAlignment="Left" Margin="582,376,0,0" VerticalAlignment="Top" Width="75" Click="View_Click"/>
+        <Button Content="Move Part" HorizontalAlignment="Left" Margin="476,376,0,0" VerticalAlignment="Top" Width="75" Click="Move_Click"/>
+        <Button Content="Remove Stock" HorizontalAlignment="Left" Margin="257,376,0,0" VerticalAlignment="Top" Width="84" Click="RemoveStock_Click"/>
+        <Button Content="Add Stock" HorizontalAlignment="Left" Margin="153,376,0,0" VerticalAlignment="Top" Width="75" Click="AddStock_Click"/>
+        <Button Content="Update Stock" HorizontalAlignment="Left" Margin="367,376,0,0" VerticalAlignment="Top" Width="81" Click="Update_Click"/>
     </Grid>
 </Window>

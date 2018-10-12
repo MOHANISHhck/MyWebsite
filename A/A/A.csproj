@@ -58,8 +58,14 @@
     <Compile Include="Inventory.xaml.cs">
       <DependentUpon>Inventory.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Login.xaml.cs">
+      <DependentUpon>Login.xaml</DependentUpon>
+    </Compile>
     <Compile Include="StockReport.xaml.cs">
       <DependentUpon>StockReport.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="StockMove.xaml.cs">
+      <DependentUpon>StockMove.xaml</DependentUpon>
     </Compile>
     <Compile Include="ViewPart.xaml.cs">
       <DependentUpon>ViewPart.xaml</DependentUpon>
@@ -79,14 +85,39 @@
     <Compile Include="ViewGroup.xaml.cs">
       <DependentUpon>ViewGroup.xaml</DependentUpon>
     </Compile>
+    <Compile Include="StockAdd.xaml.cs">
+      <DependentUpon>StockAdd.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WarehouseAdd.xaml.cs">
+      <DependentUpon>WarehouseAdd.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="StockRemove .xaml.cs">
+      <DependentUpon>StockRemove .xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WarehouseRemove.xaml.cs">
+      <DependentUpon>WarehouseRemove.xaml</DependentUpon>
+    </Compile>
     <Compile Include="WarehouseReport.xaml.cs">
       <DependentUpon>WarehouseReport.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="StockUpdate.xaml.cs">
+      <DependentUpon>StockUpdate.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WarehouseUpdate.xaml.cs">
+      <DependentUpon>WarehouseUpdate.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WarehouseView.xaml.cs">
+      <DependentUpon>WarehouseView.xaml</DependentUpon>
     </Compile>
     <Page Include="About.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Inventory.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Login.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -108,6 +139,10 @@
     <Page Include="StockReport.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="StockMove.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="ViewPart.xaml">
       <SubType>Designer</SubType>
@@ -133,7 +168,35 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="StockAdd.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WarehouseAdd.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="StockRemove .xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WarehouseRemove.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="WarehouseReport.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="StockUpdate.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WarehouseUpdate.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WarehouseView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

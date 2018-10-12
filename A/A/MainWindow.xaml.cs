@@ -78,5 +78,40 @@ namespace A
             Inventory w1 = new Inventory();
             w1.Show();
         }
+        private void AddWarehouse_Click(object sender, RoutedEventArgs e)
+        {
+            WarehouseAdd w1 = new WarehouseAdd();
+            w1.Show();
+        }
+        private void UpdateWarehouse_Click(object sender, RoutedEventArgs e)
+        {
+            WarehouseUpdate w1 = new WarehouseUpdate();
+            w1.Show();
+        }
+        private void DeleteWarehouse_Click(object sender, RoutedEventArgs e)
+        {
+            WarehouseRemove w1 = new WarehouseRemove();
+            w1.Show();
+        }
+        private void AddStock_Click(object sender, RoutedEventArgs e)
+        {
+            StockAdd w1 = new StockAdd();
+            w1.Show();
+        }
+        private void DeleteStock_Click(object sender, RoutedEventArgs e)
+        {
+            StockRemove w1 = new StockRemove();
+            w1.Show();
+        }
+        private void UpdateStock_Click(object sender, RoutedEventArgs e)
+        {
+            StockUpdate w1 = new StockUpdate();
+            w1.Show();
+        }
+        private void MoveStock_Click(object sender, RoutedEventArgs e)
+        {
+            StockMove w1 = new StockMove();
+            w1.Show();
+        }
     }
 }

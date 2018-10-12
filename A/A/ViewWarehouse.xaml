@@ -5,13 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:A"
         mc:Ignorable="d"
-        Title="View Warehouse" Height="450" Width="800">
+        Title="View Warehouses" Height="450" Width="800">
     <Window.Resources>
 
     </Window.Resources>
 
     <Grid>
-        <DataGrid Name="DG1" ItemsSource="{Binding}" AutoGenerateColumns="False" >
+        <DataGrid Name="DG1" ItemsSource="{Binding}" AutoGenerateColumns="False" Margin="0,0,0,60" >
             <DataGrid.Columns>
                 <DataGridTextColumn Header="ID"  Binding="{Binding WarehouseID}"/>
                 <DataGridTextColumn Header="Warehouse Name" Binding="{Binding WarehouseName}" />
@@ -19,6 +19,10 @@
                 <DataGridCheckBoxColumn Header="Group" Binding="{Binding WarehouseGroup}" />
             </DataGrid.Columns>
         </DataGrid>
-        
+        <Button Content="Exit" HorizontalAlignment="Left" Margin="688,376,0,0" VerticalAlignment="Top" Width="75" Click="Exit_Click"/>
+        <Button Content="View" HorizontalAlignment="Left" Margin="582,376,0,0" VerticalAlignment="Top" Width="75" Click="View_Click"/>
+        <Button Content="Update" HorizontalAlignment="Left" Margin="476,376,0,0" VerticalAlignment="Top" Width="75" Click="Update_Click"/>
+        <Button Content="Delete" HorizontalAlignment="Left" Margin="366,376,0,0" VerticalAlignment="Top" Width="75" Click="Delete_Click"/>
+        <Button Content="Add New" HorizontalAlignment="Left" Margin="262,376,0,0" VerticalAlignment="Top" Width="75" Click="AddNew_Click"/>
     </Grid>
 </Window>

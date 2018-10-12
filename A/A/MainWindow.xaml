@@ -13,10 +13,10 @@
                 <MenuItem Header="_Inventory" Click="Inventory_Click"/>
                 <Separator />
                 <MenuItem Header="Stock">
-                    <MenuItem Header="Add Stock" />
-                    <MenuItem Header="Remove Stock" />
-                    <MenuItem Header="Update Stock" />
-                    <MenuItem Header="Move Stock" />
+                    <MenuItem Header="Add Stock" Click="AddStock_Click"/>
+                    <MenuItem Header="Delete Stock" Click="DeleteStock_Click"/>
+                    <MenuItem Header="Update Stock" Click="UpdateStock_Click"/>
+                    <MenuItem Header="Move Stock" Click="MoveStock_Click"/>
                     <MenuItem Header="View Stock" Click="ViewStock_Click"/>
                 </MenuItem>
                 <Separator />
@@ -31,9 +31,9 @@
             </MenuItem>   
             <MenuItem Header="_Warehouse">
                 <MenuItem Header="_Manage Warehouse">
-                    <MenuItem Header="Add New Warehouse" />
-                    <MenuItem Header="Remove Warehouse" />
-                    <MenuItem Header="Update Warehouse" />
+                    <MenuItem Header="Add New Warehouse" Click="AddWarehouse_Click"/>
+                    <MenuItem Header="Delete Warehouse" Click="DeleteWarehouse_Click"/>
+                    <MenuItem Header="Update Warehouse" Click="UpdateWarehouse_Click"/>
                     <MenuItem Header="View Warehouse" Click="ViewWarehouse_Click"/>
                     </MenuItem>
                 <MenuItem Header="_Show groups" IsCheckable="True" IsChecked="True" />

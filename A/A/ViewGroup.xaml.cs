@@ -23,5 +23,30 @@ namespace A
         {
             InitializeComponent();
         }
+
+        private void Exit_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+
+        private void View_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Update_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Delete_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void AddNew_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
