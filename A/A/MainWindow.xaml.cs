@@ -58,9 +58,9 @@ namespace A
             ViewUser w1 = new ViewUser();
             w1.Show();
         }
-        private void ViewGroup_Click(object sender, RoutedEventArgs e)
+        private void ViewCategory_Click(object sender, RoutedEventArgs e)
         {
-            ViewGroup w1 = new ViewGroup();
+            ViewCategory w1 = new ViewCategory();
             w1.Show();
         }
         private void StockReport_Click(object sender, RoutedEventArgs e)

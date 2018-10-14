@@ -30,44 +30,40 @@
                 <MenuItem Header="_Exit" Click="Exit_Click"/>
             </MenuItem>   
             <MenuItem Header="_Warehouse">
-                <MenuItem Header="_Manage Warehouse">
-                    <MenuItem Header="Add New Warehouse" Click="AddWarehouse_Click"/>
-                    <MenuItem Header="Delete Warehouse" Click="DeleteWarehouse_Click"/>
-                    <MenuItem Header="Update Warehouse" Click="UpdateWarehouse_Click"/>
-                    <MenuItem Header="View Warehouse" Click="ViewWarehouse_Click"/>
-                    </MenuItem>
-                <MenuItem Header="_Show groups" IsCheckable="True" IsChecked="True" />
+                <MenuItem Header="Add New Warehouse" Click="AddWarehouse_Click"/>
+                <MenuItem Header="Delete Warehouse" Click="DeleteWarehouse_Click"/>
+                <MenuItem Header="Update Warehouse" Click="UpdateWarehouse_Click"/>
+                <MenuItem Header="View Warehouse" Click="ViewWarehouse_Click"/>
             </MenuItem>
             <MenuItem Header="_Tasks">
-                <MenuItem Header="_Manage tasks">
-                    <MenuItem Header="Add New Task" />
-                    <MenuItem Header="Remove Task" />
-                    <MenuItem Header="Update Task" />
-                    <MenuItem Header="View Task" Click="ViewTask_Click"/>
+                <MenuItem Header="Add New Task" />
+                <MenuItem Header="Delete Task" />
+                <MenuItem Header="Update Task" />
+                <MenuItem Header="View Task" Click="ViewTask_Click"/>
                 </MenuItem>
-                <MenuItem Header="_Show groups" IsCheckable="True" IsChecked="True" />
-            </MenuItem>
             <MenuItem Header="_Reports">
-                <MenuItem Header="_Stock Report" Click="StockReport_Click" >
+                <MenuItem Header="Stock Report" Click="StockReport_Click" >
                 </MenuItem>
-                <MenuItem Header="_Warehouse Report" Click="WarehouseReport_Click" >
+                <MenuItem Header="Warehouse Report" Click="WarehouseReport_Click" >
                 </MenuItem>
             </MenuItem>
             <MenuItem Header="_Settings">
-                <MenuItem Header="_Manage users">
+                <MenuItem Header="Manage users">
                     <MenuItem Header="Add User" />
                     <MenuItem Header="Update User" />
                     <MenuItem Header="Remove User" />
                     <MenuItem Header="View Users" Click="ViewUser_Click"/>
                 </MenuItem>
                 <Separator />
-                <MenuItem Header="_Manage Groups">
-                    <MenuItem Header="Add Group" />
-                    <MenuItem Header="Update Group" />
-                    <MenuItem Header="Remove Group" />
-                    <MenuItem Header="View Group" Click="ViewGroup_Click"/>
+                <MenuItem Header="Manage Categories">
+                    <MenuItem Header="Add Category" />
+                    <MenuItem Header="Update Category" />
+                    <MenuItem Header="Delete Category" />
+                    <MenuItem Header="View Category" Click="ViewCategory_Click"/>
                 </MenuItem>
-               </MenuItem>
+                <Separator />
+                <MenuItem Header="Change Password"/>
+            </MenuItem>
             <MenuItem Header="_Help">
                 <MenuItem Header="_About" Click="About_Click">
                 </MenuItem>

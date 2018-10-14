@@ -15,11 +15,11 @@ using System.Windows.Shapes;
 namespace A
 {
     /// <summary>
-    /// Interaction logic for ViewGroup.xaml
+    /// Interaction logic for Category.xaml
     /// </summary>
-    public partial class ViewGroup : Window
+    public partial class ViewCategory : Window
     {
-        public ViewGroup()
+        public ViewCategory()
         {
             InitializeComponent();
         }

@@ -82,8 +82,8 @@
     <Compile Include="ViewWarehouses.xaml.cs">
       <DependentUpon>ViewWarehouses.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ViewGroup.xaml.cs">
-      <DependentUpon>ViewGroup.xaml</DependentUpon>
+    <Compile Include="ViewCategory.xaml.cs">
+      <DependentUpon>ViewCategory.xaml</DependentUpon>
     </Compile>
     <Compile Include="StockAdd.xaml.cs">
       <DependentUpon>StockAdd.xaml</DependentUpon>
@@ -167,7 +167,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ViewGroup.xaml">
+    <Page Include="ViewCategory.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
