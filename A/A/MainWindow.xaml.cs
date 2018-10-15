@@ -143,6 +143,42 @@ namespace A
             TaskUpdate w1 = new TaskUpdate();
             w1.Show();
         }
+        private void AddUser_Click(object sender, RoutedEventArgs e)
+        {
+            UserAdd w1 = new UserAdd();
+            w1.Show();
+        }
+        private void DeleteUser_Click(object sender, RoutedEventArgs e)
+        {
+            UserRemove w1 = new UserRemove();
+            w1.Show();
+        }
+        private void UpdateUser_Click(object sender, RoutedEventArgs e)
+        {
+            UserUpdate w1 = new UserUpdate();
+            w1.Show();
+        }
+        private void AddCategory_Click(object sender, RoutedEventArgs e)
+        {
+            CategoryAdd w1 = new CategoryAdd();
+            w1.Show();
+        }
+        private void DeleteCategory_Click(object sender, RoutedEventArgs e)
+        {
+            CategoryRemove w1 = new CategoryRemove();
+            w1.Show();
+        }
+        private void UpdateCategory_Click(object sender, RoutedEventArgs e)
+        {
+            CategoryUpdate w1 = new CategoryUpdate();
+            w1.Show();
+        }
+
+        private void ChangePassword_Click(object sender, RoutedEventArgs e)
+        {
+            PasswordChange w1 = new PasswordChange();
+            w1.Show();
+        }
     }
 }
 

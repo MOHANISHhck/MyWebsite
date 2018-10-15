@@ -49,20 +49,20 @@
             </MenuItem>
             <MenuItem Header="_Settings">
                 <MenuItem Header="Manage users">
-                    <MenuItem Header="Add User" />
-                    <MenuItem Header="Update User" />
-                    <MenuItem Header="Delete User" />
+                    <MenuItem Header="Add User" Click="AddUser_Click"/>
+                    <MenuItem Header="Update User" Click="UpdateUser_Click"/>
+                    <MenuItem Header="Delete User" Click="DeleteUser_Click"/>
                     <MenuItem Header="View User" Click="ViewUser_Click"/>
                 </MenuItem>
                 <Separator />
                 <MenuItem Header="Manage Categories">
-                    <MenuItem Header="Add Category" />
-                    <MenuItem Header="Update Category" />
-                    <MenuItem Header="Delete Category" />
+                    <MenuItem Header="Add Category" Click="AddCategory_Click"/>
+                    <MenuItem Header="Update Category" Click="UpdateCategory_Click"/>
+                    <MenuItem Header="Delete Category" Click="DeleteCategory_Click"/>
                     <MenuItem Header="View Category" Click="ViewCategory_Click"/>
                 </MenuItem>
                 <Separator />
-                <MenuItem Header="Change Password"/>
+                <MenuItem Header="Change Password" Click="ChangePassword_Click"/>
             </MenuItem>
             <MenuItem Header="_Help">
                 <MenuItem Header="_About" Click="About_Click">

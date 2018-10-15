@@ -30,22 +30,26 @@ namespace A
 
         private void View_Click(object sender, RoutedEventArgs e)
         {
-
+            UserView w1 = new UserView();
+            w1.Show();
         }
 
         private void Update_Click(object sender, RoutedEventArgs e)
         {
-
+            UserUpdate w1 = new UserUpdate();
+            w1.Show();
         }
 
         private void Delete_Click(object sender, RoutedEventArgs e)
         {
-
+            UserRemove w1 = new UserRemove();
+            w1.Show();
         }
 
         private void AddNew_Click(object sender, RoutedEventArgs e)
         {
-
+            UserAdd w1 = new UserAdd();
+            w1.Show();
         }
     }
 }

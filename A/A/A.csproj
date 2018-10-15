@@ -61,14 +61,41 @@
     <Compile Include="Inventory.xaml.cs">
       <DependentUpon>Inventory.xaml</DependentUpon>
     </Compile>
+    <Compile Include="PasswordChange.xaml.cs">
+      <DependentUpon>PasswordChange.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Login.xaml.cs">
       <DependentUpon>Login.xaml</DependentUpon>
     </Compile>
     <Compile Include="PartAdd.xaml.cs">
       <DependentUpon>PartAdd.xaml</DependentUpon>
     </Compile>
+    <Compile Include="CategoryRemove.xaml.cs">
+      <DependentUpon>CategoryRemove.xaml</DependentUpon>
+    </Compile>
     <Compile Include="PartRemove.xaml.cs">
       <DependentUpon>PartRemove.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CategoryAdd.xaml.cs">
+      <DependentUpon>CategoryAdd.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CategoryUpdate.xaml.cs">
+      <DependentUpon>CategoryUpdate.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CategoryView.xaml.cs">
+      <DependentUpon>CategoryView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserView.xaml.cs">
+      <DependentUpon>UserView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserUpdate.xaml.cs">
+      <DependentUpon>UserUpdate.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserRemove.xaml.cs">
+      <DependentUpon>UserRemove.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserAdd.xaml.cs">
+      <DependentUpon>UserAdd.xaml</DependentUpon>
     </Compile>
     <Compile Include="TaskView.xaml.cs">
       <DependentUpon>TaskView.xaml</DependentUpon>
@@ -151,6 +178,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="PasswordChange.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Login.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -174,7 +205,39 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="CategoryRemove.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="PartRemove.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="CategoryAdd.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="CategoryUpdate.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="CategoryView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserUpdate.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserRemove.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserAdd.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
