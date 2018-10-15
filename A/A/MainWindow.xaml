@@ -22,8 +22,8 @@
                 <Separator />
                 <MenuItem Header="Spare Parts">
                     <MenuItem Header="Add New Part" />
-                    <MenuItem Header="Remove Part" />
-                     <MenuItem Header="Update Part Properties" />
+                    <MenuItem Header="Delete Part" />
+                     <MenuItem Header="Update Part" />
                     <MenuItem Header="View Part" Click="ViewPart_Click"/>
                 </MenuItem>
                 <Separator />
@@ -51,8 +51,8 @@
                 <MenuItem Header="Manage users">
                     <MenuItem Header="Add User" />
                     <MenuItem Header="Update User" />
-                    <MenuItem Header="Remove User" />
-                    <MenuItem Header="View Users" Click="ViewUser_Click"/>
+                    <MenuItem Header="Delete User" />
+                    <MenuItem Header="View User" Click="ViewUser_Click"/>
                 </MenuItem>
                 <Separator />
                 <MenuItem Header="Manage Categories">
