@@ -15,11 +15,11 @@ using System.Windows.Shapes;
 namespace A
 {
     /// <summary>
-    /// Interaction logic for StockAdd.xaml
+    /// Interaction logic for TaskUpdate.xaml
     /// </summary>
-    public partial class StockAdd : Window
+    public partial class TaskUpdate : Window
     {
-        public StockAdd()
+        public TaskUpdate()
         {
             InitializeComponent();
         }
@@ -31,12 +31,15 @@ namespace A
             {
                 this.Close();
             }
-            
+            else  
+            {
+                // Cancel code here  
+            }
         }
 
-        private void Add_Click(object sender, RoutedEventArgs e)
+        private void Update_Click(object sender, RoutedEventArgs e)
         {
-            MessageBoxResult messageBoxResult = System.Windows.MessageBox.Show("Are you sure?", "Add New Action", System.Windows.MessageBoxButton.YesNoCancel);
+            MessageBoxResult messageBoxResult = System.Windows.MessageBox.Show("Are you sure?", "Update Action", System.Windows.MessageBoxButton.YesNoCancel);
 
             if (messageBoxResult == MessageBoxResult.Yes)
             {

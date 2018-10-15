@@ -15,11 +15,11 @@ using System.Windows.Shapes;
 namespace A
 {
     /// <summary>
-    /// Interaction logic for StockAdd.xaml
+    /// Interaction logic for PartAdd.xaml
     /// </summary>
-    public partial class StockAdd : Window
+    public partial class PartAdd : Window
     {
-        public StockAdd()
+        public PartAdd()
         {
             InitializeComponent();
         }

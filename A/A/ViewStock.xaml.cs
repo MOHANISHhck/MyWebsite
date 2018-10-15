@@ -30,26 +30,31 @@ namespace A
 
         private void View_Click(object sender, RoutedEventArgs e)
         {
-
+            StockView w1 = new StockView();
+            w1.Show();
         }
 
         private void Update_Click(object sender, RoutedEventArgs e)
         {
-
+            StockUpdate w1 = new StockUpdate();
+            w1.Show();
         }
 
         private void RemoveStock_Click(object sender, RoutedEventArgs e)
         {
-
+            StockRemove w1 = new StockRemove();
+            w1.Show();
         }
 
         private void AddStock_Click(object sender, RoutedEventArgs e)
         {
-
+            StockAdd w1 = new StockAdd();
+            w1.Show();
         }
         private void Move_Click(object sender, RoutedEventArgs e)
         {
-
+            StockMove w1 = new StockMove();
+            w1.Show();
         }
     }
 }

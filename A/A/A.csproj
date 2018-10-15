@@ -64,11 +64,35 @@
     <Compile Include="Login.xaml.cs">
       <DependentUpon>Login.xaml</DependentUpon>
     </Compile>
+    <Compile Include="PartAdd.xaml.cs">
+      <DependentUpon>PartAdd.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PartRemove.xaml.cs">
+      <DependentUpon>PartRemove.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TaskView.xaml.cs">
+      <DependentUpon>TaskView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TaskUpdate.xaml.cs">
+      <DependentUpon>TaskUpdate.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TaskRemove.xaml.cs">
+      <DependentUpon>TaskRemove.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TaskAdd.xaml.cs">
+      <DependentUpon>TaskAdd.xaml</DependentUpon>
+    </Compile>
     <Compile Include="StockReport.xaml.cs">
       <DependentUpon>StockReport.xaml</DependentUpon>
     </Compile>
     <Compile Include="StockMove.xaml.cs">
       <DependentUpon>StockMove.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PartUpdate.xaml.cs">
+      <DependentUpon>PartUpdate.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PartView.xaml.cs">
+      <DependentUpon>PartView.xaml</DependentUpon>
     </Compile>
     <Compile Include="ViewPart.xaml.cs">
       <DependentUpon>ViewPart.xaml</DependentUpon>
@@ -146,11 +170,43 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="PartAdd.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="PartRemove.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="TaskView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="TaskUpdate.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="TaskRemove.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="TaskAdd.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="StockReport.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="StockMove.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="PartUpdate.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="PartView.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>

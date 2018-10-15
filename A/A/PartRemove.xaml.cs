@@ -15,11 +15,11 @@ using System.Windows.Shapes;
 namespace A
 {
     /// <summary>
-    /// Interaction logic for StockAdd.xaml
+    /// Interaction logic for PartRemove.xaml
     /// </summary>
-    public partial class StockAdd : Window
+    public partial class PartRemove : Window
     {
-        public StockAdd()
+        public PartRemove()
         {
             InitializeComponent();
         }
@@ -31,24 +31,20 @@ namespace A
             {
                 this.Close();
             }
-            
+
         }
 
-        private void Add_Click(object sender, RoutedEventArgs e)
+        private void Delete_Click(object sender, RoutedEventArgs e)
         {
-            MessageBoxResult messageBoxResult = System.Windows.MessageBox.Show("Are you sure?", "Add New Action", System.Windows.MessageBoxButton.YesNoCancel);
+            MessageBoxResult messageBoxResult = System.Windows.MessageBox.Show("Are you sure?", "Delete Action", System.Windows.MessageBoxButton.YesNo);
 
             if (messageBoxResult == MessageBoxResult.Yes)
-            {
-                // Cancel code here  
-            }
-            else if (messageBoxResult == MessageBoxResult.No)
             {
                 this.Close();
             }
             else
             {
-                // Cancel code here  
+                this.Close();
             }
         }
     }

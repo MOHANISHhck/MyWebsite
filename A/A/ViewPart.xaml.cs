@@ -30,22 +30,26 @@ namespace A
 
         private void View_Click(object sender, RoutedEventArgs e)
         {
-
+            PartView w1 = new PartView();
+            w1.Show();            
         }
 
         private void Update_Click(object sender, RoutedEventArgs e)
         {
-
+            PartUpdate w1 = new PartUpdate();
+            w1.Show();
         }
 
         private void Delete_Click(object sender, RoutedEventArgs e)
         {
-
+            PartRemove w1 = new PartRemove();
+            w1.Show();
         }
 
         private void AddNew_Click(object sender, RoutedEventArgs e)
         {
-
+            PartAdd w1 = new PartAdd();
+            w1.Show();
         }
     }
 }

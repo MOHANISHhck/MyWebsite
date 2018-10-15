@@ -30,22 +30,26 @@ namespace A
 
         private void View_Click(object sender, RoutedEventArgs e)
         {
-
+            TaskView w1 = new TaskView();
+            w1.Show();
         }
 
         private void Update_Click(object sender, RoutedEventArgs e)
         {
-
+            TaskUpdate w1 = new TaskUpdate();
+            w1.Show();
         }
 
         private void Delete_Click(object sender, RoutedEventArgs e)
         {
-
+            TaskRemove w1 = new TaskRemove();
+            w1.Show();
         }
 
         private void AddNew_Click(object sender, RoutedEventArgs e)
         {
-
+            TaskAdd w1 = new TaskAdd();
+            w1.Show();
         }
     }
 }

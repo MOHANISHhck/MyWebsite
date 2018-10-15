@@ -113,5 +113,36 @@ namespace A
             StockMove w1 = new StockMove();
             w1.Show();
         }
+        private void AddPart_Click(object sender, RoutedEventArgs e)
+        {
+            PartAdd w1 = new PartAdd();
+            w1.Show();
+        }
+        private void DeletePart_Click(object sender, RoutedEventArgs e)
+        {
+            PartRemove w1 = new PartRemove();
+            w1.Show();
+        }
+        private void UpdatePart_Click(object sender, RoutedEventArgs e)
+        {
+            PartUpdate w1 = new PartUpdate();
+            w1.Show();
+        }
+        private void AddTask_Click(object sender, RoutedEventArgs e)
+        {
+            TaskAdd w1 = new TaskAdd();
+            w1.Show();
+        }
+        private void DeleteTask_Click(object sender, RoutedEventArgs e)
+        {
+            TaskRemove w1 = new TaskRemove();
+            w1.Show();
+        }
+        private void UpdateTask_Click(object sender, RoutedEventArgs e)
+        {
+            TaskUpdate w1 = new TaskUpdate();
+            w1.Show();
+        }
     }
 }
+

@@ -21,9 +21,9 @@
                 </MenuItem>
                 <Separator />
                 <MenuItem Header="Spare Parts">
-                    <MenuItem Header="Add New Part" />
-                    <MenuItem Header="Delete Part" />
-                     <MenuItem Header="Update Part" />
+                    <MenuItem Header="Add New Part" Click="AddPart_Click"/>
+                    <MenuItem Header="Delete Part" Click="DeletePart_Click"/>
+                    <MenuItem Header="Update Part" Click="UpdatePart_Click"/>
                     <MenuItem Header="View Part" Click="ViewPart_Click"/>
                 </MenuItem>
                 <Separator />
@@ -36,9 +36,9 @@
                 <MenuItem Header="View Warehouse" Click="ViewWarehouse_Click"/>
             </MenuItem>
             <MenuItem Header="_Tasks">
-                <MenuItem Header="Add New Task" />
-                <MenuItem Header="Delete Task" />
-                <MenuItem Header="Update Task" />
+                <MenuItem Header="Add New Task" Click="AddTask_Click"/>
+                <MenuItem Header="Delete Task" Click="DeleteTask_Click"/>
+                <MenuItem Header="Update Task" Click="UpdateTask_Click"/>
                 <MenuItem Header="View Task" Click="ViewTask_Click"/>
                 </MenuItem>
             <MenuItem Header="_Reports">
