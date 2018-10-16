@@ -13,6 +13,7 @@
                 <MenuItem Header="_Inventory" Click="Inventory_Click"/>
                 <Separator />
                 <MenuItem Header="Stock">
+                    <MenuItem Header="Manage Stock" Click="ManageStock_Click"/>
                     <MenuItem Header="Add Stock" Click="AddStock_Click"/>
                     <MenuItem Header="Delete Stock" Click="DeleteStock_Click"/>
                     <MenuItem Header="Update Stock" Click="UpdateStock_Click"/>
@@ -21,6 +22,7 @@
                 </MenuItem>
                 <Separator />
                 <MenuItem Header="Spare Parts">
+                    <MenuItem Header="Manage Part" Click="ManagePart_Click"/>
                     <MenuItem Header="Add New Part" Click="AddPart_Click"/>
                     <MenuItem Header="Delete Part" Click="DeletePart_Click"/>
                     <MenuItem Header="Update Part" Click="UpdatePart_Click"/>
@@ -30,12 +32,14 @@
                 <MenuItem Header="_Exit" Click="Exit_Click"/>
             </MenuItem>   
             <MenuItem Header="_Warehouse">
+                <MenuItem Header="Manage Warehouse" Click="ManageWarehouse_Click"/>
                 <MenuItem Header="Add New Warehouse" Click="AddWarehouse_Click"/>
                 <MenuItem Header="Delete Warehouse" Click="DeleteWarehouse_Click"/>
                 <MenuItem Header="Update Warehouse" Click="UpdateWarehouse_Click"/>
                 <MenuItem Header="View Warehouse" Click="ViewWarehouse_Click"/>
             </MenuItem>
             <MenuItem Header="_Tasks">
+                <MenuItem Header="Manage Task" Click="ManageTask_Click"/>
                 <MenuItem Header="Add New Task" Click="AddTask_Click"/>
                 <MenuItem Header="Delete Task" Click="DeleteTask_Click"/>
                 <MenuItem Header="Update Task" Click="UpdateTask_Click"/>
@@ -49,6 +53,7 @@
             </MenuItem>
             <MenuItem Header="_Settings">
                 <MenuItem Header="Manage users">
+                    <MenuItem Header="Manage User" Click="ManageUser_Click"/>
                     <MenuItem Header="Add User" Click="AddUser_Click"/>
                     <MenuItem Header="Update User" Click="UpdateUser_Click"/>
                     <MenuItem Header="Delete User" Click="DeleteUser_Click"/>
@@ -56,6 +61,7 @@
                 </MenuItem>
                 <Separator />
                 <MenuItem Header="Manage Categories">
+                    <MenuItem Header="Manage Category" Click="ManageCategory_Click"/>
                     <MenuItem Header="Add Category" Click="AddCategory_Click"/>
                     <MenuItem Header="Update Category" Click="UpdateCategory_Click"/>
                     <MenuItem Header="Delete Category" Click="DeleteCategory_Click"/>
@@ -69,6 +75,6 @@
                 </MenuItem>
              </MenuItem>
         </Menu>
-        <TextBox AcceptsReturn="True" />
+        <Viewbox Height="399" VerticalAlignment="Top" Width="789"/>
     </DockPanel>
 </Window>

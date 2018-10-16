@@ -22,6 +22,14 @@ namespace A
         public CategoryView()
         {
             InitializeComponent();
+            List<Member> items = new List<Member>();
+            items.Add(new Member() { Name = "Mainboard" });
+            items.Add(new Member() { Name = "Power supply"});
+            items.Add(new Member() { Name = "Graphic card"});
+            items.Add(new Member() { Name = "Network card" });
+            items.Add(new Member() { Name = "SCSI card" });
+            items.Add(new Member() { Name = "Logic board" });
+            lvCategory.ItemsSource = items;
         }
         private void Exit_Click(object sender, RoutedEventArgs e)
         {
@@ -30,5 +38,9 @@ namespace A
             }
 
         }
+    }
+    public class Member
+    {
+        public string Name { get; set; }
     }
 }

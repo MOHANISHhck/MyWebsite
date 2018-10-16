@@ -5,10 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:A"
         mc:Ignorable="d"
-        Title="Add Category" Height="450" Width="800">
+        Title="Add Category" Height="400" Width="500">
     <Grid>
-        <Grid HorizontalAlignment="Left" Height="344" Margin="10,10,0,0" VerticalAlignment="Top" Width="763"/>
-        <Button Content="Cancel" HorizontalAlignment="Left" Margin="688,376,0,0" VerticalAlignment="Top" Width="75" Click="Cancel_Click"/>
-        <Button Content="Add New" HorizontalAlignment="Left" Margin="586,376,0,0" VerticalAlignment="Top" Width="75" Click="Add_Click"/>
+        <Button Content="Cancel" HorizontalAlignment="Left" Margin="363,317,0,0" VerticalAlignment="Top" Width="75" Click="Cancel_Click"/>
+        <Button Content="Add New" HorizontalAlignment="Left" Margin="264,317,0,0" VerticalAlignment="Top" Width="75" Click="Add_Click"/>
+        <Label Content="Category Name" HorizontalAlignment="Left" Height="25" Margin="24,55,0,0" VerticalAlignment="Top" Width="104" FontWeight="Bold"/>
+        <Label Content="Description" HorizontalAlignment="Left" Height="25" Margin="24,109,0,0" VerticalAlignment="Top" Width="74" FontWeight="Bold" Grid.RowSpan="2"/>
+        <TextBox HorizontalAlignment="Left" Height="25" Margin="201,55,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="257" AutomationProperties.HelpText="Username"/>
+        <TextBox HorizontalAlignment="Left" Height="25" Margin="201,109,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="257" AutomationProperties.HelpText="Password" Grid.RowSpan="2"/>
     </Grid>
 </Window>

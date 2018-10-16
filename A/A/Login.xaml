@@ -8,15 +8,16 @@
         Title="Login" Height="250" Width="400">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="373*"/>
-            <ColumnDefinition Width="19*"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0*"/>
         </Grid.ColumnDefinitions>
-        <Button Content="Enter" HorizontalAlignment="Left" Margin="292,175,0,0" VerticalAlignment="Top" Width="75" Height="22"/>
-        <Button Content="Cancel" HorizontalAlignment="Left" Margin="190,175,0,0" VerticalAlignment="Top" Width="75" Height="22"/>
+        <Button Content="Cancel" HorizontalAlignment="Left" Margin="292,175,0,0" VerticalAlignment="Top" Width="75" Height="22" Click="Cancel_Click" ToolTip="Exit"/>
+        <Button Content="Enter" HorizontalAlignment="Left" Margin="190,175,0,0" VerticalAlignment="Top" Width="75" Height="22" Click="Enter_Click" ToolTip="Login"/>
         <Label Content="Username" HorizontalAlignment="Left" Height="25" Margin="39,69,0,0" VerticalAlignment="Top" Width="74" FontWeight="Bold"/>
         <Label Content="Password" HorizontalAlignment="Left" Height="25" Margin="39,111,0,0" VerticalAlignment="Top" Width="74" FontWeight="Bold"/>
-        <TextBox HorizontalAlignment="Left" Height="25" Margin="190,69,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="177" AutomationProperties.HelpText="Username"/>
-        <TextBox HorizontalAlignment="Left" Height="25" Margin="190,111,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="177" AutomationProperties.HelpText="Password"/>
+        <TextBox HorizontalAlignment="Left" Height="25" Margin="190,69,0,0" Name="nameBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="177" ToolTip="Username"/>
+        <PasswordBox HorizontalAlignment="Left" Margin="190,111,0,0" Name="passwordBox" VerticalAlignment="Top" Width="177" Height="25" ToolTip="Password"/>
+        
 
     </Grid>
 </Window>

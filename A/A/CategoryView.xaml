@@ -5,9 +5,35 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:A"
         mc:Ignorable="d"
-        Title="View Category" Height="450" Width="800">
+        Title="View Category" Height="400" Width="500">
     <Grid>
-        <Grid HorizontalAlignment="Left" Height="344" Margin="10,10,0,0" VerticalAlignment="Top" Width="763"/>
-        <Button Content="Exit" HorizontalAlignment="Left" Margin="688,376,0,0" VerticalAlignment="Top" Width="75" Click="Exit_Click"/>
+        <StackPanel Margin="201,57,30,276">
+            <ComboBox>
+                <ComboBoxItem IsSelected="True" Content="Category#1"/>
+                <ComboBoxItem Content="Category#2"/>
+                <ComboBoxItem Content="Category#3"/>
+            </ComboBox>
+        </StackPanel>
+        <TextBox HorizontalAlignment="Left" Height="25" Margin="201,109,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" AutomationProperties.HelpText="Description" IsReadOnly="True"/>
+        <Label Content="Category Name" HorizontalAlignment="Left" Height="25" Margin="24,55,0,0" VerticalAlignment="Top" Width="104" FontWeight="Bold"/>
+        <Label Content="Description" HorizontalAlignment="Left" Height="25" Margin="24,109,0,0" VerticalAlignment="Top" Width="74" FontWeight="Bold"/>
+        <Label Content="Members" HorizontalAlignment="Left" Height="25" Margin="24,163,0,0" VerticalAlignment="Top" Width="74" FontWeight="Bold"/>
+        <Button Content="Exit" HorizontalAlignment="Left" Margin="363,317,0,0" VerticalAlignment="Top" Width="75" Click="Exit_Click"/>
+        <ListView HorizontalAlignment="Left" Height="100" Margin="201,181,0,0" VerticalAlignment="Top" Width="250" Name="lvCategory">
+            <ListView.View >
+                <GridView>
+                    <GridViewColumn DisplayMemberBinding="{Binding Name}" Width="250">
+                        <GridViewColumnHeader>Spare Part
+                            <GridViewColumnHeader.ContextMenu>
+                                <ContextMenu>
+                                    <MenuItem Header="Ascending" />
+                                    <MenuItem Header="Descending" />
+                                </ContextMenu>
+                            </GridViewColumnHeader.ContextMenu>
+                        </GridViewColumnHeader>
+                    </GridViewColumn>
+                </GridView>
+            </ListView.View>
+        </ListView>
     </Grid>
 </Window>

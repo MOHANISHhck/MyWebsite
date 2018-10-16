@@ -47,7 +47,7 @@ namespace A
             }
             else if (messageBoxResult == MessageBoxResult.No)
             {
-                this.Close();
+                // Cancel code here
             }
             else
             {

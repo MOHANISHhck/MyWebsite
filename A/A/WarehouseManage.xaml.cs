@@ -15,11 +15,11 @@ using System.Windows.Shapes;
 namespace A
 {
     /// <summary>
-    /// Interaction logic for View_User.xaml
+    /// Interaction logic for WarehouseManage.xaml
     /// </summary>
-    public partial class ViewUser : Window
+    public partial class WarehouseManage : Window
     {
-        public ViewUser()
+        public WarehouseManage()
         {
             InitializeComponent();
         }
@@ -30,26 +30,26 @@ namespace A
 
         private void View_Click(object sender, RoutedEventArgs e)
         {
-            UserView w1 = new UserView();
-            w1.Show();
+            WarehouseView WarehouseAdd = new WarehouseView();
+            WarehouseAdd.Show();
         }
 
         private void Update_Click(object sender, RoutedEventArgs e)
         {
-            UserUpdate w1 = new UserUpdate();
+            WarehouseUpdate w1 = new WarehouseUpdate();
             w1.Show();
         }
 
         private void Delete_Click(object sender, RoutedEventArgs e)
         {
-            UserRemove w1 = new UserRemove();
-            w1.Show();
+            WarehouseRemove WarehouseRemove = new WarehouseRemove();
+            WarehouseRemove.Show();
         }
 
         private void AddNew_Click(object sender, RoutedEventArgs e)
         {
-            UserAdd w1 = new UserAdd();
-            w1.Show();
+            WarehouseAdd WarehouseAdd = new WarehouseAdd();
+            WarehouseAdd.Show();
         }
-    }
+     }
 }

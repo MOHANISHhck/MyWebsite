@@ -19,9 +19,37 @@ namespace A
     /// </summary>
     public partial class Login : Window
     {
+
         public Login()
         {
             InitializeComponent();
+        }
+
+        private void Cancel_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
+        }
+
+        private void Enter_Click(object sender, RoutedEventArgs e)
+        {
+            if (nameBox.Text == "" || passwordBox.Password == "")
+            {
+                MessageBox.Show("Please provide UserName and Password");
+                return;
+            }
+            else if (nameBox.Text != "user" || passwordBox.Password != "password")
+            {
+
+                MessageBox.Show("Incorrect username or password");
+
+            }
+            else 
+            {
+                MainWindow w1 = new MainWindow();
+                w1.Show();
+                this.Close();
+
+            }
         }
     }
 }

@@ -15,11 +15,11 @@ using System.Windows.Shapes;
 namespace A
 {
     /// <summary>
-    /// Interaction logic for View_Stock.xaml
+    /// Interaction logic for UserManage.xaml
     /// </summary>
-    public partial class ViewStock : Window
+    public partial class UserManage : Window
     {
-        public ViewStock()
+        public UserManage()
         {
             InitializeComponent();
         }
@@ -30,30 +30,25 @@ namespace A
 
         private void View_Click(object sender, RoutedEventArgs e)
         {
-            StockView w1 = new StockView();
+            UserView w1 = new UserView();
             w1.Show();
         }
 
         private void Update_Click(object sender, RoutedEventArgs e)
         {
-            StockUpdate w1 = new StockUpdate();
+            UserUpdate w1 = new UserUpdate();
             w1.Show();
         }
 
-        private void RemoveStock_Click(object sender, RoutedEventArgs e)
+        private void Delete_Click(object sender, RoutedEventArgs e)
         {
-            StockRemove w1 = new StockRemove();
+            UserRemove w1 = new UserRemove();
             w1.Show();
         }
 
-        private void AddStock_Click(object sender, RoutedEventArgs e)
+        private void AddNew_Click(object sender, RoutedEventArgs e)
         {
-            StockAdd w1 = new StockAdd();
-            w1.Show();
-        }
-        private void Move_Click(object sender, RoutedEventArgs e)
-        {
-            StockMove w1 = new StockMove();
+            UserAdd w1 = new UserAdd();
             w1.Show();
         }
     }

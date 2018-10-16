@@ -15,14 +15,15 @@ using System.Windows.Shapes;
 namespace A
 {
     /// <summary>
-    /// Interaction logic for View_Warehouses.xaml
+    /// Interaction logic for CategoryManage.xaml
     /// </summary>
-    public partial class ViewWarehouses : Window
+    public partial class CategoryManage : Window
     {
-        public ViewWarehouses()
+        public CategoryManage()
         {
             InitializeComponent();
         }
+
         private void Exit_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
@@ -30,26 +31,26 @@ namespace A
 
         private void View_Click(object sender, RoutedEventArgs e)
         {
-            WarehouseView WarehouseAdd = new WarehouseView();
-            WarehouseAdd.Show();
+            CategoryView w1 = new CategoryView();
+            w1.Show();
         }
 
         private void Update_Click(object sender, RoutedEventArgs e)
         {
-            WarehouseUpdate w1 = new WarehouseUpdate();
+            CategoryUpdate w1 = new CategoryUpdate();
             w1.Show();
         }
 
         private void Delete_Click(object sender, RoutedEventArgs e)
         {
-            WarehouseRemove WarehouseRemove = new WarehouseRemove();
-            WarehouseRemove.Show();
+            CategoryRemove w1 = new CategoryRemove();
+            w1.Show();
         }
 
         private void AddNew_Click(object sender, RoutedEventArgs e)
         {
-            WarehouseAdd WarehouseAdd = new WarehouseAdd();
-            WarehouseAdd.Show();
+            CategoryAdd w1 = new CategoryAdd();
+            w1.Show();
         }
-     }
+    }
 }

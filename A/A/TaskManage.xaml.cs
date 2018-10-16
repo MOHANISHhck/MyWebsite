@@ -15,11 +15,11 @@ using System.Windows.Shapes;
 namespace A
 {
     /// <summary>
-    /// Interaction logic for View_Task.xaml
+    /// Interaction logic for TaskManage.xaml
     /// </summary>
-    public partial class ViewTask : Window
+    public partial class TaskManage : Window
     {
-        public ViewTask()
+        public TaskManage()
         {
             InitializeComponent();
         }

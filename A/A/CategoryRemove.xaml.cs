@@ -40,11 +40,11 @@ namespace A
 
             if (messageBoxResult == MessageBoxResult.Yes)
             {
-                this.Close();
+                
             }
             else
             {
-                this.Close();
+                
             }
         }
     }

@@ -35,32 +35,32 @@ namespace A
         }
         private void ViewPart_Click(object sender, RoutedEventArgs e)
         {
-            ViewPart w1 = new ViewPart();
+            PartView w1 = new PartView();
             w1.Show();
         }
         private void ViewStock_Click(object sender, RoutedEventArgs e)
         {
-            ViewStock w1 = new ViewStock();
+            StockView w1 = new StockView();
             w1.Show();
         }
         private void ViewWarehouse_Click(object sender, RoutedEventArgs e)
         {
-            ViewWarehouses w1 = new ViewWarehouses();
+            WarehouseView w1 = new WarehouseView();
             w1.Show();
         }
         private void ViewTask_Click(object sender, RoutedEventArgs e)
         {
-            ViewTask w1 = new ViewTask();
+            TaskView w1 = new TaskView();
             w1.Show();
         }
         private void ViewUser_Click(object sender, RoutedEventArgs e)
         {
-            ViewUser w1 = new ViewUser();
+            UserView w1 = new UserView();
             w1.Show();
         }
         private void ViewCategory_Click(object sender, RoutedEventArgs e)
         {
-            ViewCategory w1 = new ViewCategory();
+            CategoryView w1 = new CategoryView();
             w1.Show();
         }
         private void StockReport_Click(object sender, RoutedEventArgs e)
@@ -93,6 +93,11 @@ namespace A
             WarehouseRemove w1 = new WarehouseRemove();
             w1.Show();
         }
+        private void ManageWarehouse_Click(object sender, RoutedEventArgs e)
+        {
+            WarehouseManage w1 = new WarehouseManage();
+            w1.Show();
+        }
         private void AddStock_Click(object sender, RoutedEventArgs e)
         {
             StockAdd w1 = new StockAdd();
@@ -113,6 +118,11 @@ namespace A
             StockMove w1 = new StockMove();
             w1.Show();
         }
+        private void ManageStock_Click(object sender, RoutedEventArgs e)
+        {
+            StockManage w1 = new StockManage();
+            w1.Show();
+        }
         private void AddPart_Click(object sender, RoutedEventArgs e)
         {
             PartAdd w1 = new PartAdd();
@@ -126,6 +136,11 @@ namespace A
         private void UpdatePart_Click(object sender, RoutedEventArgs e)
         {
             PartUpdate w1 = new PartUpdate();
+            w1.Show();
+        }
+        private void ManagePart_Click(object sender, RoutedEventArgs e)
+        {
+            PartManage w1 = new PartManage();
             w1.Show();
         }
         private void AddTask_Click(object sender, RoutedEventArgs e)
@@ -143,6 +158,11 @@ namespace A
             TaskUpdate w1 = new TaskUpdate();
             w1.Show();
         }
+        private void ManageTask_Click(object sender, RoutedEventArgs e)
+        {
+            TaskManage w1 = new TaskManage();
+            w1.Show();
+        }
         private void AddUser_Click(object sender, RoutedEventArgs e)
         {
             UserAdd w1 = new UserAdd();
@@ -158,6 +178,11 @@ namespace A
             UserUpdate w1 = new UserUpdate();
             w1.Show();
         }
+        private void ManageUser_Click(object sender, RoutedEventArgs e)
+        {
+            UserManage w1 = new UserManage();
+            w1.Show();
+        }
         private void AddCategory_Click(object sender, RoutedEventArgs e)
         {
             CategoryAdd w1 = new CategoryAdd();
@@ -171,6 +196,11 @@ namespace A
         private void UpdateCategory_Click(object sender, RoutedEventArgs e)
         {
             CategoryUpdate w1 = new CategoryUpdate();
+            w1.Show();
+        }
+        private void ManageCategory_Click(object sender, RoutedEventArgs e)
+        {
+            CategoryManage w1 = new CategoryManage();
             w1.Show();
         }
 
