@@ -5,10 +5,18 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:A"
         mc:Ignorable="d"
-        Title="Add Warehouse" Height="450" Width="800">
+        Title="Add Warehouse" Height="450" Width="500">
     <Grid>
-        <Grid HorizontalAlignment="Left" Height="344" Margin="10,10,0,0" VerticalAlignment="Top" Width="763"/>
-        <Button Content="Cancel" HorizontalAlignment="Left" Margin="688,376,0,0" VerticalAlignment="Top" Width="75" Click="Cancel_Click"/>
-        <Button Content="Add New" HorizontalAlignment="Left" Margin="586,376,0,0" VerticalAlignment="Top" Width="75" Click="Add_Click"/>
+        <Button Content="Exit" HorizontalAlignment="Left" Margin="363,317,0,0" VerticalAlignment="Top" Width="75" Click="Exit_Click"/>
+        <Button Content="Add New" HorizontalAlignment="Left" Margin="264,317,0,0" VerticalAlignment="Top" Width="75" Click="Add_Click"/>
+        <Label Content="Warehouse Name" HorizontalAlignment="Left" Height="25" Margin="24,55,0,0" VerticalAlignment="Top" Width="135" FontWeight="Bold"/>
+        <Label Content="Warehouse Address" HorizontalAlignment="Left" Height="25" Margin="24,109,0,0" VerticalAlignment="Top" Width="135" FontWeight="Bold"/>
+        <TextBox HorizontalAlignment="Left" Height="25" Margin="201,55,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="257" AutomationProperties.HelpText="Name"/>
+        <TextBox HorizontalAlignment="Left" Height="25" Margin="201,109,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="257" AutomationProperties.HelpText="Location"/>
+        <Label Content="Warehouse Size" HorizontalAlignment="Left" Height="25" Margin="24,158,0,0" VerticalAlignment="Top" Width="104" FontWeight="Bold"/>
+        <Label Content="Desription" HorizontalAlignment="Left" Height="25" Margin="24,205,0,0" VerticalAlignment="Top" Width="104" FontWeight="Bold"/>
+        <TextBox HorizontalAlignment="Left" Height="25" Margin="201,205,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="257" AutomationProperties.HelpText="Description"/>
+        <TextBox HorizontalAlignment="Left" Height="25" Margin="201,158,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="257" AutomationProperties.HelpText="Size"/>
+
     </Grid>
 </Window>

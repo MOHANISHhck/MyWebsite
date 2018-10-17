@@ -5,8 +5,27 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:A"
         mc:Ignorable="d"
-        Title="WarehouseReport" Height="450" Width="800">
+        Title="Warehouse Report" Height="450" Width="800">
     <Grid>
-        
+        <StackPanel Margin="201,57,30,276">
+            <ComboBox>
+                <ComboBoxItem IsSelected="True" Content="Part#1"/>
+                <ComboBoxItem Content="Part#2"/>
+                <ComboBoxItem Content="Part#3"/>
+            </ComboBox>
+        </StackPanel>
+        <DataGrid Name="DG1" ItemsSource="{Binding}" AutoGenerateColumns="False" Margin="0,101,0,170" >
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="W ID"  Binding="{Binding UserID}"/>
+                <DataGridTextColumn Header="Warehouse Name" Binding="{Binding UserName}" />
+                <DataGridHyperlinkColumn Header="Size" Binding="{Binding UPassword}"   />
+                <DataGridCheckBoxColumn Header="Available" Binding="{Binding UFunction}" />
+                <DataGridCheckBoxColumn Header="Location" Binding="{Binding UFunction}" />
+            </DataGrid.Columns>
+        </DataGrid>
+        <Label Content="Part Name" HorizontalAlignment="Left" Height="25" Margin="24,55,0,0" VerticalAlignment="Top" Width="104" FontWeight="Bold" AutomationProperties.HelpText="PArt Name"/>
+        <Button Content="Exit" HorizontalAlignment="Left" Margin="688,376,0,0" VerticalAlignment="Top" Width="75" Click="Exit_Click"/>
+        <Button Content="Save" HorizontalAlignment="Left" Margin="589,376,0,0" VerticalAlignment="Top" Width="75" Click="Save_Click"/>
+        <Image x:Name="Chart" HorizontalAlignment="Left" Height="135" Margin="43,266,0,0" VerticalAlignment="Top" Width="287" Source="Resources/Images/chart.png"/>
     </Grid>
 </Window>

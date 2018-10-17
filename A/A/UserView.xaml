@@ -5,9 +5,26 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:A"
         mc:Ignorable="d"
-        Title="View User" Height="450" Width="800">
+        Title="View User" Height="450" Width="500">
     <Grid>
-        <Grid HorizontalAlignment="Left" Height="344" Margin="10,10,0,0" VerticalAlignment="Top" Width="763"/>
-        <Button Content="Exit" HorizontalAlignment="Left" Margin="688,376,0,0" VerticalAlignment="Top" Width="75" Click="Exit_Click"/>
+        <Button Content="Exit" HorizontalAlignment="Left" Margin="363,371,0,0" VerticalAlignment="Top" Width="75" Click="Exit_Click"/>
+        <StackPanel Margin="201,57,30,276">
+            <ComboBox>
+                <ComboBoxItem IsSelected="True" Content="User#1"/>
+                <ComboBoxItem Content="User#2"/>
+                <ComboBoxItem Content="User#3"/>
+            </ComboBox>
+        </StackPanel>
+        <Label Content="User Name" HorizontalAlignment="Left" Height="25" Margin="24,109,0,0" VerticalAlignment="Top" Width="104" FontWeight="Bold"/>
+        <Label Content="User Firstname" HorizontalAlignment="Left" Height="25" Margin="24,163,0,0" VerticalAlignment="Top" Width="104" FontWeight="Bold"/>
+        <TextBox HorizontalAlignment="Left" Height="25" Margin="201,109,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="257" AutomationProperties.HelpText="Username" IsReadOnly="True"/>
+        <TextBox HorizontalAlignment="Left" Height="25" Margin="201,163,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="257" AutomationProperties.HelpText="Name" IsReadOnly="True"/>
+        <Label Content="User Surname" HorizontalAlignment="Left" Height="25" Margin="24,212,0,0" VerticalAlignment="Top" Width="104" FontWeight="Bold"/>
+        <TextBox HorizontalAlignment="Left" Height="25" Margin="201,212,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="257" AutomationProperties.HelpText="Surname" IsReadOnly="True"/>
+        <Label Content="Function" HorizontalAlignment="Left" Height="25" Margin="24,259,0,0" VerticalAlignment="Top" Width="104" FontWeight="Bold"/>
+        <TextBox HorizontalAlignment="Left" Height="25" Margin="201,259,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="257" AutomationProperties.HelpText="Function" IsReadOnly="True"/>
+        <Label Content="User email address" HorizontalAlignment="Left" Height="25" Margin="24,306,0,0" VerticalAlignment="Top" Width="130" FontWeight="Bold"/>
+        <TextBox HorizontalAlignment="Left" Height="25" Margin="201,306,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="257" AutomationProperties.HelpText="Email" IsReadOnly="True"/>
+        <Label Content="User ID" HorizontalAlignment="Left" Height="25" Margin="24,55,0,0" VerticalAlignment="Top" Width="104" FontWeight="Bold" AutomationProperties.HelpText="ID"/>
     </Grid>
 </Window>

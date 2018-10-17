@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:A"
         mc:Ignorable="d"
-        Title="Manage User" Height="450" Width="800">
+        Title="Manage Users" Height="450" Width="800">
     <Window.Resources>
 
     </Window.Resources>
@@ -13,10 +13,10 @@
     <Grid>
         <DataGrid Name="DG1" ItemsSource="{Binding}" AutoGenerateColumns="False" Margin="0,0,0,60" >
             <DataGrid.Columns>
-                <DataGridTextColumn Header="ID"  Binding="{Binding UserID}"/>
+                <DataGridTextColumn Header="User ID"  Binding="{Binding UserID}"/>
                 <DataGridTextColumn Header="Name" Binding="{Binding UserName}" />
-                <DataGridHyperlinkColumn Header="Password" Binding="{Binding UPassword}"   />
-                <DataGridCheckBoxColumn Header="Function" Binding="{Binding UFunction}" />
+                <DataGridHyperlinkColumn Header="Function" Binding="{Binding UPassword}"   />
+                <DataGridCheckBoxColumn Header="Email" Binding="{Binding UFunction}" />
             </DataGrid.Columns>
         </DataGrid>
         <Button Content="Exit" HorizontalAlignment="Left" Margin="688,376,0,0" VerticalAlignment="Top" Width="75" Click="Exit_Click"/>

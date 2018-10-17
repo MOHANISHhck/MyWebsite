@@ -5,9 +5,23 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:A"
         mc:Ignorable="d"
-        Title="View Warehouse" Height="450" Width="800">
+        Title="View Warehouse" Height="450" Width="500">
     <Grid>
-        <Grid HorizontalAlignment="Left" Height="344" Margin="10,10,0,0" VerticalAlignment="Top" Width="763"/>
-        <Button Content="Exit" HorizontalAlignment="Left" Margin="688,376,0,0" VerticalAlignment="Top" Width="75" Click="Exit_Click"/>
+        <StackPanel Margin="201,57,30,276">
+            <ComboBox>
+                <ComboBoxItem IsSelected="True" Content="Warehouse#1"/>
+                <ComboBoxItem Content="Warehouse#2"/>
+                <ComboBoxItem Content="Warehouse#3"/>
+            </ComboBox>
+        </StackPanel>
+        <Button Content="Exit" HorizontalAlignment="Left" Margin="363,371,0,0" VerticalAlignment="Top" Width="75" Click="Exit_Click"/>
+        <Label Content="Address" HorizontalAlignment="Left" Height="25" Margin="24,109,0,0" VerticalAlignment="Top" Width="104" FontWeight="Bold"/>
+        <Label Content="Size" HorizontalAlignment="Left" Height="25" Margin="24,163,0,0" VerticalAlignment="Top" Width="104" FontWeight="Bold"/>
+        <TextBox HorizontalAlignment="Left" Height="25" Margin="201,109,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="257" AutomationProperties.HelpText="Address" IsReadOnly="True"/>
+        <TextBox HorizontalAlignment="Left" Height="25" Margin="201,163,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="257" AutomationProperties.HelpText="Size" IsReadOnly="True"/>
+        <Label Content="Description" HorizontalAlignment="Left" Height="25" Margin="24,212,0,0" VerticalAlignment="Top" Width="104" FontWeight="Bold"/>
+        <TextBox HorizontalAlignment="Left" Height="25" Margin="201,212,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="257" AutomationProperties.HelpText="Description" IsReadOnly="True"/>
+        <Label Content="Warehouse Name" HorizontalAlignment="Left" Height="25" Margin="24,55,0,0" VerticalAlignment="Top" Width="140" FontWeight="Bold" AutomationProperties.HelpText="Name"/>
+
     </Grid>
 </Window>

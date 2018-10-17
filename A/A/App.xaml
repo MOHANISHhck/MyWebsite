@@ -4,6 +4,8 @@
              xmlns:local="clr-namespace:A"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+
+        <BitmapImage x:Key="ImageSource1"  UriSource="/images/chart.png" />
+
     </Application.Resources>
 </Application>

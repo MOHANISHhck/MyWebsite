@@ -8,7 +8,7 @@
         Title="Update Category" Height="400" Width="500">
     <Grid>
         <StackPanel Margin="201,57,30,276">
-            <ComboBox>
+            <ComboBox IsEditable="True">
                 <ComboBoxItem IsSelected="True" Content="Category#1"/>
                 <ComboBoxItem Content="Category#2"/>
                 <ComboBoxItem Content="Category#3"/>
