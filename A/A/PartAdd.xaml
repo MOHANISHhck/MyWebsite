@@ -8,7 +8,7 @@
         Title="Add Part" Height="450" Width="500">
     <Grid>
         <Button Content="Exit" HorizontalAlignment="Left" Margin="363,367,0,0" VerticalAlignment="Top" Width="75" Click="Exit_Click"/>
-        <Button Content="Add New" HorizontalAlignment="Left" Margin="264,367,0,0" VerticalAlignment="Top" Width="75" Click="Add_Click"/>
+        <Button Content="Add Part" HorizontalAlignment="Left" Margin="264,367,0,0" VerticalAlignment="Top" Width="75" Click="Add_Click"/>
         <Label Content="Part Name" HorizontalAlignment="Left" Height="25" Margin="24,55,0,0" VerticalAlignment="Top" Width="104" FontWeight="Bold"/>
         <Label Content="Location" HorizontalAlignment="Left" Height="25" Margin="24,109,0,0" VerticalAlignment="Top" Width="104" FontWeight="Bold"/>
         <TextBox HorizontalAlignment="Left" Height="25" Margin="201,55,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="257" AutomationProperties.HelpText="Part Name"/>

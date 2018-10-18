@@ -13,12 +13,9 @@
     <Grid>
         <DataGrid Name="DG1" ItemsSource="{Binding}" AutoGenerateColumns="False" Margin="0,0,0,60"  >
             <DataGrid.Columns>
-                <DataGridTextColumn Header="ID"  Binding="{Binding PartID}"/>
+                <DataGridTextColumn Header="Part ID"  Binding="{Binding PartID}"/>
                 <DataGridTextColumn Header="Part Name" Binding="{Binding PartName}" />
-                <DataGridCheckBoxColumn Header="Stock Size" Binding="{Binding StockSize}" />
-                <DataGridCheckBoxColumn Header="Category" Binding="{Binding PartCategory}" />
-                <DataGridCheckBoxColumn Header="Group" Binding="{Binding PartGroup}" />
-                <DataGridCheckBoxColumn Header="Quantity" Binding="{Binding PartQuantity}" />
+                <DataGridCheckBoxColumn Header="Stock No" Binding="{Binding StockSize}" />
                 <DataGridCheckBoxColumn Header="Location" Binding="{Binding StockLocation}" />
             </DataGrid.Columns>
         </DataGrid>

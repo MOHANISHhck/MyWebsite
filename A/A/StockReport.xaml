@@ -14,7 +14,7 @@
                 <ComboBoxItem Content="Part#3"/>
             </ComboBox>
         </StackPanel>
-        <DataGrid Name="DG1" ItemsSource="{Binding}" AutoGenerateColumns="False" Margin="0,101,0,170" >
+        <DataGrid Name="DG1" ItemsSource="{Binding}" AutoGenerateColumns="False" Margin="10,110,10,170" >
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Part ID"  Binding="{Binding UserID}"/>
                 <DataGridTextColumn Header="Part Name" Binding="{Binding UserName}" />

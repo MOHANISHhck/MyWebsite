@@ -23,7 +23,7 @@ namespace A
         {
             InitializeComponent();
         }
-        private void Cancel_Click(object sender, RoutedEventArgs e)
+        private void Exit_Click(object sender, RoutedEventArgs e)
         {
             MessageBoxResult messageBoxResult = System.Windows.MessageBox.Show("Are you sure?", "Cancel Action", System.Windows.MessageBoxButton.YesNo);
 
@@ -36,15 +36,11 @@ namespace A
 
         private void Add_Click(object sender, RoutedEventArgs e)
         {
-            MessageBoxResult messageBoxResult = System.Windows.MessageBox.Show("Are you sure?", "Add New Action", System.Windows.MessageBoxButton.YesNoCancel);
+            MessageBoxResult messageBoxResult = System.Windows.MessageBox.Show("Are you sure?", "Add New Action", System.Windows.MessageBoxButton.YesNo);
 
             if (messageBoxResult == MessageBoxResult.Yes)
             {
                 // Cancel code here  
-            }
-            else if (messageBoxResult == MessageBoxResult.No)
-            {
-                this.Close();
             }
             else
             {

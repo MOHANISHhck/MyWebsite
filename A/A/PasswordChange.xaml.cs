@@ -23,7 +23,7 @@ namespace A
         {
             InitializeComponent();
         }
-        private void Cancel_Click(object sender, RoutedEventArgs e)
+        private void Exit_Click(object sender, RoutedEventArgs e)
         {
             Close();
         }

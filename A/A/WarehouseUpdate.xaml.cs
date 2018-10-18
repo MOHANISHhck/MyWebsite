@@ -39,15 +39,11 @@ namespace A
 
         private void Update_Click(object sender, RoutedEventArgs e)
         {
-            MessageBoxResult messageBoxResult = System.Windows.MessageBox.Show("Are you sure?", "Update Action", System.Windows.MessageBoxButton.YesNoCancel);
+            MessageBoxResult messageBoxResult = System.Windows.MessageBox.Show("Are you sure?", "Update Action", System.Windows.MessageBoxButton.YesNo);
 
             if (messageBoxResult == MessageBoxResult.Yes)
             {
                 // Cancel code here  
-            }
-            else if (messageBoxResult == MessageBoxResult.No)
-            {
-                this.Close();
             }
             else
             {

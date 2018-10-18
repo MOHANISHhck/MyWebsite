@@ -5,9 +5,24 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:A"
         mc:Ignorable="d"
-        Title="View Stock" Height="450" Width="800">
+        Title="View Stock" Height="450" Width="500">
     <Grid>
-        <Grid HorizontalAlignment="Left" Height="344" Margin="10,10,0,0" VerticalAlignment="Top" Width="763"/>
-        <Button Content="Exit" HorizontalAlignment="Left" Margin="688,376,0,0" VerticalAlignment="Top" Width="75" Click="Exit_Click"/>
+        <Label Content="Part Name" HorizontalAlignment="Left" Height="25" Margin="24,55,0,0" VerticalAlignment="Top" Width="104" FontWeight="Bold"/>
+        <StackPanel Margin="201,55,30,133">
+            <ComboBox>
+                <ComboBoxItem IsSelected="True" Content="Part#1"/>
+                <ComboBoxItem Content="Part#2"/>
+                <ComboBoxItem Content="Part#3"/>
+            </ComboBox>
+        </StackPanel>
+        <DataGrid x:Name="DG1" ItemsSource="{Binding}" AutoGenerateColumns="False" Margin="10,110,10,60" >
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Part Name" Binding="{Binding UserName}" />
+                <DataGridHyperlinkColumn Header="Stock No" Binding="{Binding UPassword}"   />
+                <DataGridCheckBoxColumn Header="Location" Binding="{Binding UFunction}" />
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button Content="Exit" HorizontalAlignment="Left" Margin="363,371,0,0" VerticalAlignment="Top" Width="75" Click="Exit_Click"/>
+
     </Grid>
 </Window>
