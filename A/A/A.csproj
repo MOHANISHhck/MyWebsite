@@ -103,23 +103,8 @@
     <Compile Include="UserAdd.xaml.cs">
       <DependentUpon>UserAdd.xaml</DependentUpon>
     </Compile>
-    <Compile Include="TaskView.xaml.cs">
-      <DependentUpon>TaskView.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="TaskUpdate.xaml.cs">
-      <DependentUpon>TaskUpdate.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="TaskRemove.xaml.cs">
-      <DependentUpon>TaskRemove.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="TaskAdd.xaml.cs">
-      <DependentUpon>TaskAdd.xaml</DependentUpon>
-    </Compile>
     <Compile Include="StockReport.xaml.cs">
       <DependentUpon>StockReport.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="StockMove.xaml.cs">
-      <DependentUpon>StockMove.xaml</DependentUpon>
     </Compile>
     <Compile Include="PartUpdate.xaml.cs">
       <DependentUpon>PartUpdate.xaml</DependentUpon>
@@ -127,32 +112,8 @@
     <Compile Include="PartView.xaml.cs">
       <DependentUpon>PartView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="PartManage.xaml.cs">
-      <DependentUpon>PartManage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="StockManage.xaml.cs">
-      <DependentUpon>StockManage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="TaskManage.xaml.cs">
-      <DependentUpon>TaskManage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="UserManage.xaml.cs">
-      <DependentUpon>UserManage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="WarehouseManage.xaml.cs">
-      <DependentUpon>WarehouseManage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="CategoryManage.xaml.cs">
-      <DependentUpon>CategoryManage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="StockAdd.xaml.cs">
-      <DependentUpon>StockAdd.xaml</DependentUpon>
-    </Compile>
     <Compile Include="WarehouseAdd.xaml.cs">
       <DependentUpon>WarehouseAdd.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="StockRemove .xaml.cs">
-      <DependentUpon>StockRemove .xaml</DependentUpon>
     </Compile>
     <Compile Include="WarehouseRemove.xaml.cs">
       <DependentUpon>WarehouseRemove.xaml</DependentUpon>
@@ -160,14 +121,8 @@
     <Compile Include="WarehouseReport.xaml.cs">
       <DependentUpon>WarehouseReport.xaml</DependentUpon>
     </Compile>
-    <Compile Include="StockUpdate.xaml.cs">
-      <DependentUpon>StockUpdate.xaml</DependentUpon>
-    </Compile>
     <Compile Include="WarehouseUpdate.xaml.cs">
       <DependentUpon>WarehouseUpdate.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="StockView.xaml.cs">
-      <DependentUpon>StockView.xaml</DependentUpon>
     </Compile>
     <Compile Include="WarehouseView.xaml.cs">
       <DependentUpon>WarehouseView.xaml</DependentUpon>
@@ -247,29 +202,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="TaskView.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="TaskUpdate.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="TaskRemove.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="TaskAdd.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
     <Page Include="StockReport.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="StockMove.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
     </Page>
     <Page Include="PartUpdate.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -279,41 +214,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="PartManage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="StockManage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="TaskManage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="UserManage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="WarehouseManage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="CategoryManage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="StockAdd.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
     <Page Include="WarehouseAdd.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="StockRemove .xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
     </Page>
     <Page Include="WarehouseRemove.xaml">
       <SubType>Designer</SubType>
@@ -323,17 +226,9 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="StockUpdate.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
     <Page Include="WarehouseUpdate.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="StockView.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
     </Page>
     <Page Include="WarehouseView.xaml">
       <SubType>Designer</SubType>

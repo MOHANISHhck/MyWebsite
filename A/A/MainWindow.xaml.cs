@@ -38,19 +38,9 @@ namespace A
             PartView w1 = new PartView();
             w1.Show();
         }
-        private void ViewStock_Click(object sender, RoutedEventArgs e)
-        {
-            StockView w1 = new StockView();
-            w1.Show();
-        }
         private void ViewWarehouse_Click(object sender, RoutedEventArgs e)
         {
             WarehouseView w1 = new WarehouseView();
-            w1.Show();
-        }
-        private void ViewTask_Click(object sender, RoutedEventArgs e)
-        {
-            TaskView w1 = new TaskView();
             w1.Show();
         }
         private void ViewUser_Click(object sender, RoutedEventArgs e)
@@ -73,11 +63,7 @@ namespace A
             WarehouseReport w1 = new WarehouseReport();
             w1.Show();
         }
-        private void Inventory_Click(object sender, RoutedEventArgs e)
-        {
-            Inventory w1 = new Inventory();
-            w1.Show();
-        }
+
         private void AddWarehouse_Click(object sender, RoutedEventArgs e)
         {
             WarehouseAdd w1 = new WarehouseAdd();
@@ -93,37 +79,8 @@ namespace A
             WarehouseRemove w1 = new WarehouseRemove();
             w1.Show();
         }
-        private void ManageWarehouse_Click(object sender, RoutedEventArgs e)
-        {
-            WarehouseManage w1 = new WarehouseManage();
-            w1.Show();
-        }
-        private void AddStock_Click(object sender, RoutedEventArgs e)
-        {
-            StockAdd w1 = new StockAdd();
-            w1.Show();
-        }
-        private void DeleteStock_Click(object sender, RoutedEventArgs e)
-        {
-            StockRemove w1 = new StockRemove();
-            w1.Show();
-        }
-        private void UpdateStock_Click(object sender, RoutedEventArgs e)
-        {
-            StockUpdate w1 = new StockUpdate();
-            w1.Show();
-        }
-        private void MoveStock_Click(object sender, RoutedEventArgs e)
-        {
-            StockMove w1 = new StockMove();
-            w1.Show();
-        }
-        private void ManageStock_Click(object sender, RoutedEventArgs e)
-        {
-            StockManage w1 = new StockManage();
-            w1.Show();
-        }
-        private void AddPart_Click(object sender, RoutedEventArgs e)
+
+         private void AddPart_Click(object sender, RoutedEventArgs e)
         {
             PartAdd w1 = new PartAdd();
             w1.Show();
@@ -138,32 +95,8 @@ namespace A
             PartUpdate w1 = new PartUpdate();
             w1.Show();
         }
-        private void ManagePart_Click(object sender, RoutedEventArgs e)
-        {
-            PartManage w1 = new PartManage();
-            w1.Show();
-        }
-        private void AddTask_Click(object sender, RoutedEventArgs e)
-        {
-            TaskAdd w1 = new TaskAdd();
-            w1.Show();
-        }
-        private void DeleteTask_Click(object sender, RoutedEventArgs e)
-        {
-            TaskRemove w1 = new TaskRemove();
-            w1.Show();
-        }
-        private void UpdateTask_Click(object sender, RoutedEventArgs e)
-        {
-            TaskUpdate w1 = new TaskUpdate();
-            w1.Show();
-        }
-        private void ManageTask_Click(object sender, RoutedEventArgs e)
-        {
-            TaskManage w1 = new TaskManage();
-            w1.Show();
-        }
-        private void AddUser_Click(object sender, RoutedEventArgs e)
+
+         private void AddUser_Click(object sender, RoutedEventArgs e)
         {
             UserAdd w1 = new UserAdd();
             w1.Show();
@@ -176,11 +109,6 @@ namespace A
         private void UpdateUser_Click(object sender, RoutedEventArgs e)
         {
             UserUpdate w1 = new UserUpdate();
-            w1.Show();
-        }
-        private void ManageUser_Click(object sender, RoutedEventArgs e)
-        {
-            UserManage w1 = new UserManage();
             w1.Show();
         }
         private void AddCategory_Click(object sender, RoutedEventArgs e)
@@ -196,11 +124,6 @@ namespace A
         private void UpdateCategory_Click(object sender, RoutedEventArgs e)
         {
             CategoryUpdate w1 = new CategoryUpdate();
-            w1.Show();
-        }
-        private void ManageCategory_Click(object sender, RoutedEventArgs e)
-        {
-            CategoryManage w1 = new CategoryManage();
             w1.Show();
         }
 
