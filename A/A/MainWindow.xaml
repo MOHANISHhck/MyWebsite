@@ -5,51 +5,53 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:A"
         mc:Ignorable="d"
-        Title="Dashboard" Height="423" Width="800">
+        Title="Dashboard" Height="450" Width="800">
 
     <Grid>
-        <DockPanel>
-            <Menu DockPanel.Dock="Top" Height="400">
-                <MenuItem Header="Parts">
-                    <MenuItem Header="Add New Part" Click="AddPart_Click"/>
-                    <MenuItem Header="Delete Part" Click="DeletePart_Click"/>
-                    <MenuItem Header="Update Part" Click="UpdatePart_Click"/>
-                    <MenuItem Header="View Part" Click="ViewPart_Click"/>
+        <DockPanel Margin="0,0,0,390">
+            <Menu Name="mnMainMenu" DockPanel.Dock="Top" Height="30">
+                <MenuItem Name="subitemParts" Header="Parts">
+                    <MenuItem Name="itemAddPart" Header="Add New Part" Click="AddPart_Click"/>
+                    <MenuItem Name="itemDeletePart" Header="Delete Part" Click="DeletePart_Click"/>
+                    <MenuItem Name="itemUpdatePart" Header="Update Part" Click="UpdatePart_Click"/>
+                    <MenuItem Name="itemViewPart" Header="View Part" Click="ViewPart_Click"/>
                 </MenuItem>
-                <MenuItem Header="_Warehouse">
-                    <MenuItem Header="Add New Warehouse" Click="AddWarehouse_Click"/>
-                    <MenuItem Header="Delete Warehouse" Click="DeleteWarehouse_Click"/>
-                    <MenuItem Header="Update Warehouse" Click="UpdateWarehouse_Click"/>
-                    <MenuItem Header="View Warehouse" Click="ViewWarehouse_Click"/>
+                <MenuItem Name="subitemWarehouse" Header="_Warehouse">
+                    <MenuItem Name="itemAddWarehouse" Header="Add New Warehouse" Click="AddWarehouse_Click"/>
+                    <MenuItem Name="itemDeleteWarehouse" Header="Delete Warehouse" Click="DeleteWarehouse_Click"/>
+                    <MenuItem Name="itemUpdateWarehouse" Header="Update Warehouse" Click="UpdateWarehouse_Click"/>
+                    <MenuItem Name="itemViewWarehouse" Header="View Warehouse" Click="ViewWarehouse_Click"/>
                 </MenuItem>
-                <MenuItem Header="Categories">
-                    <MenuItem Header="Add Category" Click="AddCategory_Click"/>
-                    <MenuItem Header="Update Category" Click="UpdateCategory_Click"/>
-                    <MenuItem Header="Delete Category" Click="DeleteCategory_Click"/>
-                    <MenuItem Header="View Category" Click="ViewCategory_Click"/>
+                <MenuItem Name="subitemCategories" Header="Categories">
+                    <MenuItem Name="itemAddCategory" Header="Add Category" Click="AddCategory_Click"/>
+                    <MenuItem Name="itemDeleteCategory" Header="Delete Category" Click="DeleteCategory_Click"/>
+                    <MenuItem Name="itemUpdateCategory" Header="Update Category" Click="UpdateCategory_Click"/>
+                    <MenuItem Name="itemViewCategory" Header="View Category" Click="ViewCategory_Click"/>
                 </MenuItem>
-                <MenuItem Header="_Reports">
-                    <MenuItem Header="Stock Report" Click="StockReport_Click" >
+                <MenuItem Name="subitemReports" Header="_Reports">
+                    <MenuItem Name="itemSReport" Header="Stock Report" Click="StockReport_Click" >
                     </MenuItem>
-                    <MenuItem Header="Warehouse Report" Click="WarehouseReport_Click" >
+                    <MenuItem Name="itemWReport" Header="Warehouse Report" Click="WarehouseReport_Click" >
                     </MenuItem>
                 </MenuItem>
-                <MenuItem Header="_Settings">
-                    <MenuItem Header="Manage users">
-                        <MenuItem Header="Add User" Click="AddUser_Click"/>
-                        <MenuItem Header="Update User" Click="UpdateUser_Click"/>
-                        <MenuItem Header="Delete User" Click="DeleteUser_Click"/>
-                        <MenuItem Header="View User" Click="ViewUser_Click"/>
+                <MenuItem Name="subitemSettings" Header="_Settings">
+                    <MenuItem Name="subitemMUsers" Header="Manage users">
+                        <MenuItem Name="itemAddUser" Header="Add User" Click="AddUser_Click"/>
+                        <MenuItem Name="itemDeleteUser" Header="Delete User" Click="DeleteUser_Click"/>
+                        <MenuItem Name="itemUpdateUser" Header="Update User" Click="UpdateUser_Click"/>
+                        <MenuItem Name="itemViewUser" Header="View User" Click="ViewUser_Click"/>
                     </MenuItem>
                     <Separator />
-                    <MenuItem Header="Change Password" Click="ChangePassword_Click"/>
+                    <MenuItem Name="itemChPassword" Header="Change Password" Click="ChangePassword_Click"/>
                 </MenuItem>
-                <MenuItem Header="_Help">
-                    <MenuItem Header="_About" Click="About_Click">
+                <MenuItem Name="subitemHelp" Header="_Help">
+                    <MenuItem Name="itemAbout" Header="_About" Click="About_Click">
                     </MenuItem>
                 </MenuItem>
             </Menu>
         </DockPanel>
-        <Button Content="Exit" HorizontalAlignment="Left" Margin="693,346,0,0" VerticalAlignment="Top" Width="75" Click="Exit_Click"/>
+        
+        <Button Name="btnExit" Content="Exit" HorizontalAlignment="Left" Margin="693,367,0,0" VerticalAlignment="Top" Width="75" Click="Exit_Click"/>
+        
     </Grid>
 </Window>

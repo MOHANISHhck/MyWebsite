@@ -7,17 +7,17 @@
         mc:Ignorable="d"
         Title="Delete Category" Height="400" Width="500">
     <Grid>
-        <StackPanel Margin="201,57,30,276">
-            <ComboBox>
+        <StackPanel Name="stkCategory" Margin="201,57,30,276">
+            <ComboBox Name="cboxCategory">
                 <ComboBoxItem IsSelected="True" Content="Category#1"/>
                 <ComboBoxItem Content="Category#2"/>
                 <ComboBoxItem Content="Category#3"/>
             </ComboBox>
         </StackPanel>
-        <Button Content="Exit" HorizontalAlignment="Left" Margin="363,317,0,0" VerticalAlignment="Top" Width="75" Click="Exit_Click" ToolTip="Exit"/>
-        <Button Content="Delete" HorizontalAlignment="Left" Margin="264,317,0,0" VerticalAlignment="Top" Width="75" Click="Delete_Click" ToolTip="Confirm Remove"/>
-        <Label Content="Category Name" HorizontalAlignment="Left" Height="25" Margin="24,55,0,0" VerticalAlignment="Top" Width="104" FontWeight="Bold"/>
-        <Label Content="Description" HorizontalAlignment="Left" Height="25" Margin="24,109,0,0" VerticalAlignment="Top" Width="74" FontWeight="Bold"/>
-        <TextBox HorizontalAlignment="Left" Height="25" Margin="201,109,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" AutomationProperties.HelpText="Description" IsReadOnly="True"/>
+        <Button Name="btnExit" Content="Exit" HorizontalAlignment="Left" Margin="363,317,0,0" VerticalAlignment="Top" Width="75" Click="Exit_Click" ToolTip="Exit"/>
+        <Button Name="btnDelete" Content="Delete" HorizontalAlignment="Left" Margin="264,317,0,0" VerticalAlignment="Top" Width="75" Click="Delete_Click" ToolTip="Confirm Remove"/>
+        <Label Name="lblCategoryName" Content="Category Name" HorizontalAlignment="Left" Height="25" Margin="24,55,0,0" VerticalAlignment="Top" Width="104" FontWeight="Bold"/>
+        <Label Name="lblDescription" Content="Description" HorizontalAlignment="Left" Height="25" Margin="24,109,0,0" VerticalAlignment="Top" Width="74" FontWeight="Bold"/>
+        <TextBox Name="txtDescription" HorizontalAlignment="Left" Height="25" Margin="201,109,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" AutomationProperties.HelpText="Description" IsReadOnly="True"/>
     </Grid>
 </Window>

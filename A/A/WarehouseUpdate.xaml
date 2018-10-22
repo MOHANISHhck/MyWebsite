@@ -7,22 +7,22 @@
         mc:Ignorable="d"
         Title="Update Warehouse" Height="450" Width="500">
     <Grid>
-        <StackPanel Margin="201,57,30,276">
-            <ComboBox IsEditable="True">
+        <Button Name="btnExit" Content="Exit" HorizontalAlignment="Left" Margin="363,371,0,0" VerticalAlignment="Top" Width="75" Click="Exit_Click"/>
+        <Button Name="btnUpdate" Content="Update" HorizontalAlignment="Left" Margin="264,371,0,0" VerticalAlignment="Top" Width="75" Click="Update_Click"/>
+        <StackPanel Name="stkWarehouses"  Margin="201,57,30,276">
+            <ComboBox Name="cboxWarehouses">
                 <ComboBoxItem IsSelected="True" Content="Warehouse#1"/>
                 <ComboBoxItem Content="Warehouse#2"/>
                 <ComboBoxItem Content="Warehouse#3"/>
             </ComboBox>
         </StackPanel>
-        <Button Content="Exit" HorizontalAlignment="Left" Margin="363,371,0,0" VerticalAlignment="Top" Width="75" Click="Exit_Click"/>
-        <Button Content="Update" HorizontalAlignment="Left" Margin="264,371,0,0" VerticalAlignment="Top" Width="75" Click="Update_Click"/>
-        <Label Content="Address" HorizontalAlignment="Left" Height="25" Margin="24,109,0,0" VerticalAlignment="Top" Width="104" FontWeight="Bold"/>
-        <Label Content="Size" HorizontalAlignment="Left" Height="25" Margin="24,163,0,0" VerticalAlignment="Top" Width="104" FontWeight="Bold"/>
-        <TextBox HorizontalAlignment="Left" Height="25" Margin="201,109,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="257" AutomationProperties.HelpText="Address" />
-        <TextBox HorizontalAlignment="Left" Height="25" Margin="201,163,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="257" AutomationProperties.HelpText="Size" />
-        <Label Content="Description" HorizontalAlignment="Left" Height="25" Margin="24,212,0,0" VerticalAlignment="Top" Width="104" FontWeight="Bold"/>
-        <TextBox HorizontalAlignment="Left" Height="25" Margin="201,212,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="257" AutomationProperties.HelpText="Description" />
-        <Label Content="Warehouse Name" HorizontalAlignment="Left" Height="25" Margin="24,55,0,0" VerticalAlignment="Top" Width="125" FontWeight="Bold" AutomationProperties.HelpText="Name"/>
+        <TextBox Name="txtWLocation" HorizontalAlignment="Left" Height="25" Margin="201,109,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="257" AutomationProperties.HelpText="Address" />
+        <TextBox Name="txtWSize" HorizontalAlignment="Left" Height="25" Margin="201,163,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="257" AutomationProperties.HelpText="Size" />
+        <TextBox Name="txtWDescription" HorizontalAlignment="Left" Height="25" Margin="201,212,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="257" AutomationProperties.HelpText="Description" />
+        <Label Name="lblWName" Content="Warehouse Name" HorizontalAlignment="Left" Height="25" Margin="24,55,0,0" VerticalAlignment="Top" Width="135" FontWeight="Bold"/>
+        <Label Name="lblWLocation" Content="Warehouse Address" HorizontalAlignment="Left" Height="25" Margin="24,109,0,0" VerticalAlignment="Top" Width="135" FontWeight="Bold"/>
+        <Label Name="lblWSize" Content="Warehouse Size" HorizontalAlignment="Left" Height="25" Margin="24,158,0,0" VerticalAlignment="Top" Width="104" FontWeight="Bold"/>
+        <Label Name="lblWDescription" Content="Desription" HorizontalAlignment="Left" Height="25" Margin="24,205,0,0" VerticalAlignment="Top" Width="104" FontWeight="Bold"/>
 
     </Grid>
 </Window>

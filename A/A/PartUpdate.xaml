@@ -7,27 +7,27 @@
         mc:Ignorable="d"
         Title="Update Part" Height="450" Width="500">
     <Grid>
-        <Button Content="Exit" HorizontalAlignment="Left" Margin="363,367,0,0" VerticalAlignment="Top" Width="75" Click="Exit_Click"/>
-        <Button Content="Update" HorizontalAlignment="Left" Margin="264,367,0,0" VerticalAlignment="Top" Width="75" Click="Update_Click"/>
-        <Label Content="Part Name" HorizontalAlignment="Left" Height="25" Margin="24,55,0,0" VerticalAlignment="Top" Width="104" FontWeight="Bold"/>
-        <Label Content="Location" HorizontalAlignment="Left" Height="25" Margin="24,109,0,0" VerticalAlignment="Top" Width="104" FontWeight="Bold"/>
-        <Label Content="Quantity" HorizontalAlignment="Left" Height="25" Margin="24,158,0,0" VerticalAlignment="Top" Width="104" FontWeight="Bold"/>
-        <TextBox HorizontalAlignment="Left" Height="25" Margin="201,158,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="257" AutomationProperties.HelpText="Quantity" IsReadOnly="True"/>
-        <Label Content="Part description" HorizontalAlignment="Left" Height="25" Margin="24,205,0,0" VerticalAlignment="Top" Width="104" FontWeight="Bold"/>
-        <TextBox HorizontalAlignment="Left" Height="25" Margin="201,205,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="257" AutomationProperties.HelpText="Description" />
-        <Label Content="Category" HorizontalAlignment="Left" Height="25" Margin="24,252,0,0" VerticalAlignment="Top" Width="130" FontWeight="Bold"/>
-        <TextBox HorizontalAlignment="Left" Height="25" Margin="201,109,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="257" AutomationProperties.HelpText="Location" IsReadOnly="True"/>
-        <Label Content="Compliance Standard" HorizontalAlignment="Left" Height="25" Margin="24,301,0,0" VerticalAlignment="Top" Width="130" FontWeight="Bold"/>
-        <TextBox HorizontalAlignment="Left" Height="25" Margin="201,301,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="257" AutomationProperties.HelpText="Standard" />
-        <StackPanel Margin="201,55,30,133">
-            <ComboBox>
+        <Button Name="btnExit" Content="Exit" HorizontalAlignment="Left" Margin="363,367,0,0" VerticalAlignment="Top" Width="75" Click="Exit_Click"/>
+        <Button Name="btnUpdate" Content="Update" HorizontalAlignment="Left" Margin="264,367,0,0" VerticalAlignment="Top" Width="75" Click="Update_Click"/>
+        <Label Name="lblPartName" Content="Part Name" HorizontalAlignment="Left" Height="25" Margin="24,55,0,0" VerticalAlignment="Top" Width="104" FontWeight="Bold"/>
+        <Label Name="lblLocation" Content="Location" HorizontalAlignment="Left" Height="25" Margin="24,109,0,0" VerticalAlignment="Top" Width="104" FontWeight="Bold"/>
+        <Label Name="lblQuantity" Content="Quantity" HorizontalAlignment="Left" Height="25" Margin="24,158,0,0" VerticalAlignment="Top" Width="104" FontWeight="Bold"/>
+        <TextBox Name="txtPartQuantity" HorizontalAlignment="Left" Height="25" Margin="201,158,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="257" AutomationProperties.HelpText="Quantity" IsReadOnly="True"/>
+        <Label Name="lblDescription" Content="Part description" HorizontalAlignment="Left" Height="25" Margin="24,205,0,0" VerticalAlignment="Top" Width="104" FontWeight="Bold"/>
+        <TextBox Name="txtPartDescription" HorizontalAlignment="Left" Height="25" Margin="201,205,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="257" AutomationProperties.HelpText="Description" />
+        <Label Name="lblCategory" Content="Category" HorizontalAlignment="Left" Height="25" Margin="24,252,0,0" VerticalAlignment="Top" Width="130" FontWeight="Bold"/>
+        <TextBox Name="txtLocation" HorizontalAlignment="Left" Height="25" Margin="201,109,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="257" AutomationProperties.HelpText="Location" IsReadOnly="True"/>
+        <Label Name="lblStandard" Content="Compliance Standard" HorizontalAlignment="Left" Height="25" Margin="24,301,0,0" VerticalAlignment="Top" Width="130" FontWeight="Bold"/>
+        <TextBox Name="txtPartStandard" HorizontalAlignment="Left" Height="25" Margin="201,301,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="257" AutomationProperties.HelpText="Standard" />
+        <StackPanel Name="stkParts" Margin="201,55,30,133">
+            <ComboBox Name="cboxParts">
                 <ComboBoxItem IsSelected="True" Content="Part#1"/>
                 <ComboBoxItem Content="Part#2"/>
                 <ComboBoxItem Content="Part#3"/>
             </ComboBox>
         </StackPanel>
-        <StackPanel Margin="201,252,30,133">
-            <ComboBox>
+        <StackPanel Name="stkCategory" Margin="201,252,30,133">
+            <ComboBox Name="cboxCategory">
                 <ComboBoxItem IsSelected="True" Content="Category#1"/>
                 <ComboBoxItem Content="Category#2"/>
                 <ComboBoxItem Content="Category#3"/>

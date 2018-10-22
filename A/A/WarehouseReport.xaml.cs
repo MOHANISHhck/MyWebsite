@@ -47,5 +47,10 @@ namespace A
                 this.Close();
             }
         }
+
+        private void DG1_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }

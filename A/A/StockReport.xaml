@@ -7,25 +7,26 @@
         mc:Ignorable="d"
         Title="Stock Report" Height="450" Width="800">
     <Grid>
-        <StackPanel Margin="201,57,30,276">
-            <ComboBox>
+        <StackPanel Name="stkParts" Margin="201,57,30,276">
+            <ComboBox Name="cboxParts">
                 <ComboBoxItem IsSelected="True" Content="Part#1"/>
                 <ComboBoxItem Content="Part#2"/>
                 <ComboBoxItem Content="Part#3"/>
             </ComboBox>
         </StackPanel>
-        <DataGrid Name="DG1" ItemsSource="{Binding}" AutoGenerateColumns="False" Margin="10,110,10,170" >
+        <DataGrid Name="DG1" ItemsSource="{Binding}" AutoGenerateColumns="False" Margin="10,110,10,60" >
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Part ID"  Binding="{Binding UserID}"/>
                 <DataGridTextColumn Header="Part Name" Binding="{Binding UserName}" />
                 <DataGridHyperlinkColumn Header="Stock No" Binding="{Binding UPassword}"   />
+                <DataGridCheckBoxColumn Header="Min Stock" Binding="{Binding UFunction}" />
                 <DataGridCheckBoxColumn Header="Location" Binding="{Binding UFunction}" />
+                <DataGridCheckBoxColumn Header="Category" Binding="{Binding UFunction}" />
+                <DataGridCheckBoxColumn Header="Standard" Binding="{Binding UFunction}" />
             </DataGrid.Columns>
         </DataGrid>
-        <Label Content="Part Name" HorizontalAlignment="Left" Height="25" Margin="24,55,0,0" VerticalAlignment="Top" Width="104" FontWeight="Bold" AutomationProperties.HelpText="PArt Name"/>
-        <Button Content="Exit" HorizontalAlignment="Left" Margin="688,376,0,0" VerticalAlignment="Top" Width="75" Click="Exit_Click"/>
-        <Button Content="Save" HorizontalAlignment="Left" Margin="589,376,0,0" VerticalAlignment="Top" Width="75" Click="Save_Click"/>
-        <Image x:Name="Chart" HorizontalAlignment="Left" Height="135" Margin="43,266,0,0" VerticalAlignment="Top" Width="287" Source="Resources/Images/chart.png"/>
-
-    </Grid>
+        <Label Name="lblPartName" Content="Part Name" HorizontalAlignment="Left" Height="25" Margin="24,55,0,0" VerticalAlignment="Top" Width="104" FontWeight="Bold" AutomationProperties.HelpText="PArt Name"/>
+        <Button Name="btnExit" Content="Exit" HorizontalAlignment="Left" Margin="688,376,0,0" VerticalAlignment="Top" Width="75" Click="Exit_Click"/>
+        <Button Name="btnSave"  Content="Save" HorizontalAlignment="Left" Margin="589,376,0,0" VerticalAlignment="Top" Width="75" Click="Save_Click"/>
+     </Grid>
 </Window>

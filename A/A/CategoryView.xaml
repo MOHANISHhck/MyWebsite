@@ -7,20 +7,20 @@
         mc:Ignorable="d"
         Title="View Category" Height="400" Width="500">
     <Grid>
-        <StackPanel Margin="201,57,30,276">
-            <ComboBox>
+        <StackPanel Name="stkCategory" Margin="201,57,30,276">
+            <ComboBox Name="cboxCategory">
                 <ComboBoxItem IsSelected="True" Content="Category#1"/>
                 <ComboBoxItem Content="Category#2"/>
                 <ComboBoxItem Content="Category#3"/>
             </ComboBox>
         </StackPanel>
-        <TextBox HorizontalAlignment="Left" Height="25" Margin="201,109,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" AutomationProperties.HelpText="Description" IsReadOnly="True"/>
-        <Label Content="Category Name" HorizontalAlignment="Left" Height="25" Margin="24,55,0,0" VerticalAlignment="Top" Width="104" FontWeight="Bold"/>
-        <Label Content="Description" HorizontalAlignment="Left" Height="25" Margin="24,109,0,0" VerticalAlignment="Top" Width="74" FontWeight="Bold"/>
-        <Label Content="Members" HorizontalAlignment="Left" Height="25" Margin="24,163,0,0" VerticalAlignment="Top" Width="74" FontWeight="Bold"/>
-        <Button Content="Exit" HorizontalAlignment="Left" Margin="363,317,0,0" VerticalAlignment="Top" Width="75" Click="Exit_Click"/>
+        <TextBox Name="txtDescription" HorizontalAlignment="Left" Height="25" Margin="201,109,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" AutomationProperties.HelpText="Description" IsReadOnly="True"/>
+        <Label Name="lblCategoryName" Content="Category Name" HorizontalAlignment="Left" Height="25" Margin="24,55,0,0" VerticalAlignment="Top" Width="104" FontWeight="Bold"/>
+        <Label Name="lblDescription" Content="Description" HorizontalAlignment="Left" Height="25" Margin="24,109,0,0" VerticalAlignment="Top" Width="74" FontWeight="Bold"/>
+        <Label Name="lblMembers" Content="Members" HorizontalAlignment="Left" Height="25" Margin="24,163,0,0" VerticalAlignment="Top" Width="74" FontWeight="Bold"/>
+        <Button Name="btnExit" Content="Exit" HorizontalAlignment="Left" Margin="363,317,0,0" VerticalAlignment="Top" Width="75" Click="Exit_Click"/>
         <ListView HorizontalAlignment="Left" Height="100" Margin="201,165,0,0" VerticalAlignment="Top" Width="250" Name="lvCategory">
-            <ListView.View >
+            <ListView.View>
                 <GridView>
                     <GridViewColumn DisplayMemberBinding="{Binding Name}" Width="250">
                         <GridViewColumnHeader>Spare Part

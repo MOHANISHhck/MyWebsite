@@ -25,19 +25,19 @@ namespace A
             InitializeComponent();
         }
 
-        private void Cancel_Click(object sender, RoutedEventArgs e)
+        private void Exit_Click(object sender, RoutedEventArgs e)
         {
             Close();
         }
 
         private void Enter_Click(object sender, RoutedEventArgs e)
         {
-            if (nameBox.Text == "" || passwordBox.Password == "")
+            if (txtUsername.Text == "" || psboxPassword.Password == "")
             {
                 MessageBox.Show("Please provide UserName and Password");
                 return;
             }
-            else if (nameBox.Text != "user" || passwordBox.Password != "password")
+            else if (txtUsername.Text != "user" || psboxPassword.Password != "password")
             {
 
                 MessageBox.Show("Incorrect username or password");

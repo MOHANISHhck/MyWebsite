@@ -7,25 +7,23 @@
         mc:Ignorable="d"
         Title="Update User" Height="450" Width="500">
     <Grid>
-        <StackPanel Margin="201,57,30,276">
-            <ComboBox IsEditable="True">
+        <Button Name="btnExit" Content="Exit" HorizontalAlignment="Left" Margin="363,371,0,0" VerticalAlignment="Top" Width="75" Click="Exit_Click"/>
+        <Button Name="btnUpdate" Content="Update" HorizontalAlignment="Left" Margin="264,371,0,0" VerticalAlignment="Top" Width="75" Click="Update_Click"/>
+        <StackPanel Name="stkUsers" Margin="201,57,30,276">
+            <ComboBox Name="cboxUsers">
                 <ComboBoxItem IsSelected="True" Content="User#1"/>
                 <ComboBoxItem Content="User#2"/>
                 <ComboBoxItem Content="User#3"/>
             </ComboBox>
         </StackPanel>
-        <Button Content="Exit" HorizontalAlignment="Left" Margin="363,371,0,0" VerticalAlignment="Top" Width="75" Click="Exit_Click"/>
-        <Button Content="Update" HorizontalAlignment="Left" Margin="264,371,0,0" VerticalAlignment="Top" Width="75" Click="Update_Click"/>
-        <Label Content="User Name" HorizontalAlignment="Left" Height="25" Margin="24,109,0,0" VerticalAlignment="Top" Width="104" FontWeight="Bold"/>
-        <Label Content="User Firstname" HorizontalAlignment="Left" Height="25" Margin="24,163,0,0" VerticalAlignment="Top" Width="104" FontWeight="Bold"/>
-        <TextBox HorizontalAlignment="Left" Height="25" Margin="201,109,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="257" AutomationProperties.HelpText="Username"/>
-        <TextBox HorizontalAlignment="Left" Height="25" Margin="201,163,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="257" AutomationProperties.HelpText="Name"/>
-        <Label Content="User Surname" HorizontalAlignment="Left" Height="25" Margin="24,212,0,0" VerticalAlignment="Top" Width="104" FontWeight="Bold"/>
-        <TextBox HorizontalAlignment="Left" Height="25" Margin="201,212,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="257" AutomationProperties.HelpText="Surname"/>
-        <Label Content="Function" HorizontalAlignment="Left" Height="25" Margin="24,259,0,0" VerticalAlignment="Top" Width="104" FontWeight="Bold"/>
-        <TextBox HorizontalAlignment="Left" Height="25" Margin="201,259,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="257" AutomationProperties.HelpText="Function"/>
-        <Label Content="User email address" HorizontalAlignment="Left" Height="25" Margin="24,306,0,0" VerticalAlignment="Top" Width="130" FontWeight="Bold"/>
-        <TextBox HorizontalAlignment="Left" Height="25" Margin="201,306,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="257" AutomationProperties.HelpText="Email"/>
-        <Label Content="User ID" HorizontalAlignment="Left" Height="25" Margin="24,55,0,0" VerticalAlignment="Top" Width="104" FontWeight="Bold" AutomationProperties.HelpText="ID"/>
+        <Label Name="lblUserFname" Content="User First name" HorizontalAlignment="Left" Height="25" Margin="24,109,0,0" VerticalAlignment="Top" Width="104" FontWeight="Bold"/>
+        <TextBox Name="txtUserFname" HorizontalAlignment="Left" Height="25" Margin="201,109,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="257" AutomationProperties.HelpText="Name" />
+        <Label Name="lblUserSname" Content="User Surname" HorizontalAlignment="Left" Height="25" Margin="24,163,0,0" VerticalAlignment="Top" Width="104" FontWeight="Bold"/>
+        <TextBox Name="txtUserSname" HorizontalAlignment="Left" Height="25" Margin="201,163,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="257" AutomationProperties.HelpText="Surname" />
+        <Label Name="lblUserFunction" Content="Function" HorizontalAlignment="Left" Height="25" Margin="24,212,0,0" VerticalAlignment="Top" Width="104" FontWeight="Bold"/>
+        <TextBox Name="txtUserFunction" HorizontalAlignment="Left" Height="25" Margin="201,212,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="257" AutomationProperties.HelpText="Function" />
+        <Label Name="lblUserEmail" Content="User email address" HorizontalAlignment="Left" Height="25" Margin="24,259,0,0" VerticalAlignment="Top" Width="130" FontWeight="Bold"/>
+        <TextBox Name="txtUserEmail" HorizontalAlignment="Left" Height="25" Margin="201,259,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="257" AutomationProperties.HelpText="Email" />
+        <Label Name="lblUserName" Content="User Name" HorizontalAlignment="Left" Height="25" Margin="24,55,0,0" VerticalAlignment="Top" Width="104" FontWeight="Bold" AutomationProperties.HelpText="ID"/>
     </Grid>
 </Window>
