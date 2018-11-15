@@ -22,7 +22,6 @@
                 <DataGridCheckBoxColumn Header="Min Stock" Binding="{Binding UFunction}" />
                 <DataGridCheckBoxColumn Header="Location" Binding="{Binding UFunction}" />
                 <DataGridCheckBoxColumn Header="Category" Binding="{Binding UFunction}" />
-                <DataGridCheckBoxColumn Header="Standard" Binding="{Binding UFunction}" />
             </DataGrid.Columns>
         </DataGrid>
         <Label Name="lblPartName" Content="Part Name" HorizontalAlignment="Left" Height="25" Margin="24,55,0,0" VerticalAlignment="Top" Width="104" FontWeight="Bold" AutomationProperties.HelpText="PArt Name"/>
