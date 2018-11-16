@@ -50,75 +50,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Address.cs">
-      <DependentUpon>PMSolutionModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Category.cs">
-      <DependentUpon>PMSolutionModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Function.cs">
-      <DependentUpon>PMSolutionModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Part.cs">
-      <DependentUpon>PMSolutionModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="PMSolutionModel.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>PMSolutionModel.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="PMSolutionModel.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>PMSolutionModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="PMSolutionModel.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>PMSolutionModel.edmx</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
-    <Compile Include="Standard.cs">
-      <DependentUpon>PMSolutionModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="User.cs">
-      <DependentUpon>PMSolutionModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Warehouse.cs">
-      <DependentUpon>PMSolutionModel.tt</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
-    <EntityDeploy Include="PMSolutionModel.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>PMSolutionModel.Designer.cs</LastGenOutput>
-    </EntityDeploy>
     <None Include="packages.config" />
-    <None Include="PMSolutionModel.edmx.diagram">
-      <DependentUpon>PMSolutionModel.edmx</DependentUpon>
-    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="PMSolutionModel.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>PMSolutionModel.Context.cs</LastGenOutput>
-      <DependentUpon>PMSolutionModel.edmx</DependentUpon>
-    </Content>
-    <Content Include="PMSolutionModel.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>PMSolutionModel.edmx</DependentUpon>
-      <LastGenOutput>PMSolutionModel.cs</LastGenOutput>
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
